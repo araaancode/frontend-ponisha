@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMCH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 antialiased">
+
+    <!-- 1. Navbar -->
+    <nav style="background-color: #004f71;color:#fff;" class="bg-white shadow-md nav-1">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-200 font-sm font-bold">News</a>
+                <a href="#" class="text-gray-200 font-sm font-bold">Events</a>
+                <a href="#" class="text-gray-200 font-sm font-bold">Press</a>
+                <a href="#" class="text-gray-200 font-sm font-bold">Karriere</a>
+                <a href="#" class="text-gray-200 font-sm font-bold">Shop</a>
+            </div>
+
+            <div class="w-px h-10 bg-gray-300 mx-4 font-bold"></div>
+            <div class="">
+                <img src="./icon/Icon Telefon.svg" alt="Telefon">
+            </div>
+
+            <div class="w-px h-10 bg-gray-300 mx-4 font-bold"></div>
+            <div class="">Hospital Logo</div>
+
+            <div class="w-px h-10 bg-gray-300 mx-4 font-bold"></div>
+            <div class="">
+                <a href="">Sign-in</a>
+                sign in Logo
+            </div>
+        </div>
+    </nav>
+
+    <nav style="background-color: #1b3a54;color:#fff;" class="bg-white shadow-md nav-2">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center py-2 px-2 border rounded-full border-white">
+                <input
+                    class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                    type="text" aria-label="Search">
+                <button class="flex-shrink-0 bg-transparent border-none text-gray-700 py-1 px-2" type="button">
+                    <i class="fas fa-search text-white text-xl"></i>
+                </button>
+            </div>
+            <div style="color: #1b3a54;" class="flex items-center py-2 px-8 rounded-full border-white bg-yellow-300">
+                Jetzt bewerben
+            </div>
+
+            <div class="text-xl font-bold">Hospital Logo</div>
+        </div>
+    </nav>
+
+    <!-- 2. Header -->
+    <header class="bg-cover bg-center h-screen text-white" style="background-image: url('header-bg.jpg');">
+        <div class="container mx-auto px-4 h-full flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold">Welcome to Our Hospital</h1>
+                <p class="mt-4 text-lg md:text-xl">We provide the best medical services</p>
+            </div>
+        </div>
+    </header>
+
+    <img src="color.png" alt="">
+
+
+    <!-- 3. Links -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="#" class="text-center py-4 bg-gray-100 rounded-md">Link 1</a>
+            <a href="#" class="text-center py-4 bg-gray-100 rounded-md">Link 2</a>
+            <a href="#" class="text-center py-4 bg-gray-100 rounded-md">Link 3</a>
+            <a href="#" class="text-center py-4 bg-gray-100 rounded-md">Link 4</a>
+        </div>
+    </section>
+
+    <!-- 4. Banner -->
+    <section class="bg-blue-600 text-white py-12 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold">This is Our Banner</h2>
+            <p class="mt-4">Some additional information about the banner.</p>
+        </div>
+    </section>
+
+    <!-- 5. About -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">About the Hospital</h2>
+            <p class="mt-4 text-center">We provide the most reliable medical care for patients of all ages.</p>
+        </div>
+    </section>
+
+    <!-- 6. Photo Slider -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Photo Gallery</h2>
+            <div class="mt-4 flex space-x-4 overflow-x-auto">
+                <img src="photo1.jpg" alt="Photo 1" class="rounded-lg w-1/3">
+                <img src="photo2.jpg" alt="Photo 2" class="rounded-lg w-1/3">
+                <img src="photo3.jpg" alt="Photo 3" class="rounded-lg w-1/3">
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-2xl font-bold">Contact Us</h2>
+                <p class="mt-4">We are here to answer your questions and help you with whatever you need.</p>
+            </div>
+            <div>
+                <img src="contact.jpg" alt="Contact Image" class="rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Features -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8">
+            <div>
+                <img src="features.jpg" alt="Features Image" class="rounded-lg">
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold">Hospital Features</h2>
+                <div class="mt-4 space-y-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-stethoscope text-blue-500"></i>
+                        <span class="ml-2">Feature 1</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-heartbeat text-red-500"></i>
+                        <span class="ml-2">Feature 2</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-user-md text-green-500"></i>
+                        <span class="ml-2">Feature 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Video Gallery (Slider) -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Video Gallery</h2>
+            <div class="mt-4 relative">
+                <div class="flex overflow-x-auto space-x-4">
+                    <video class="w-1/3 rounded-lg" controls>
+                        <source src="video1.mp4" type="video/mp4">
+                    </video>
+                    <video class="w-1/3 rounded-lg" controls>
+                        <source src="video2.mp4" type="video/mp4">
+                    </video>
+                    <video class="w-1/3 rounded-lg" controls>
+                        <source src="video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <button
+                    class="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-800 text-white px-2 py-1">❮</button>
+                <button
+                    class="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-800 text-white px-2 py-1">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Site Statistics -->
+    <section class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h3 class="text-3xl font-bold">100+</h3>
+                <p>Doctors</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold">500+</h3>
+                <p>Beds</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold">1000+</h3>
+                <p>Happy Patients</p>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold">200+</h3>
+                <p>Staff</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Blog Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Latest Blogs</h2>
+            <div class="mt-8 grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">Blog Title 1</h3>
+                    <p class="mt-4">Brief description of blog 1...</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">Blog Title 2</h3>
+                    <p class="mt-4">Brief description of blog 2...</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold">Blog Title 3</h3>
+                    <p class="mt-4">Brief description of blog 3...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Medical Tests -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Medical Tests</h2>
+            <div class="mt-8 grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold">Test 1</h3>
+                    <p class="mt-4">Description of test 1</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold">Test 2</h3>
+                    <p class="mt-4">Description of test 2</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold">Test 3</h3>
+                    <p class="mt-4">Description of test 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. Image Slider -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Image Slider</h2>
+            <div class="mt-4 flex space-x-4 overflow-x-auto">
+                <img src="image1.jpg" alt="Image 1" class="rounded-lg w-1/3">
+                <img src="image2.jpg" alt="Image 2" class="rounded-lg w-1/3">
+                <img src="image3.jpg" alt="Image 3" class="rounded-lg w-1/3">
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. Photos of Doctors -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Photos of Doctors</h2>
+            <div class="mt-8 grid md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="doctor1.jpg" alt="Doctor 1" class="rounded-full mx-auto mb-4 w-24 h-24">
+                    <h3 class="text-xl font-bold">Doctor 1</h3>
+                    <p class="mt-2">Specialization</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="doctor2.jpg" alt="Doctor 2" class="rounded-full mx-auto mb-4 w-24 h-24">
+                    <h3 class="text-xl font-bold">Doctor 2</h3>
+                    <p class="mt-2">Specialization</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="doctor3.jpg" alt="Doctor 3" class="rounded-full mx-auto mb-4 w-24 h-24">
+                    <h3 class="text-xl font-bold">Doctor 3</h3>
+                    <p class="mt-2">Specialization</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="doctor4.jpg" alt="Doctor 4" class="rounded-full mx-auto mb-4 w-24 h-24">
+                    <h3 class="text-xl font-bold">Doctor 4</h3>
+                    <p class="mt-2">Specialization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. Another Video Gallery -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Another Video Gallery</h2>
+            <div class="mt-4 relative">
+                <div class="flex overflow-x-auto space-x-4">
+                    <video class="w-1/3 rounded-lg" controls>
+                        <source src="video4.mp4" type="video/mp4">
+                    </video>
+                    <video class="w-1/3 rounded-lg" controls>
+                        <source src="video5.mp4" type="video/mp4">
+                    </video>
+                    <video class="w-1/3 rounded-lg" controls>
+                        <source src="video6.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <button
+                    class="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-800 text-white px-2 py-1">❮</button>
+                <button
+                    class="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-800 text-white px-2 py-1">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. Recreational Facilities -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Recreational Facilities</h2>
+            <p class="mt-4 text-center">We offer a variety of recreational facilities for the comfort of patients and
+                visitors.</p>
+        </div>
+    </section>
+
+    <!-- 17. Queuing -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8">
+            <div class="flex justify-center items-center">
+                <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Book Now</button>
+            </div>
+            <div>
+                <p class="text-lg">Book your appointment today and avoid long waits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400">Privacy Policy</a>
+                <a href="#" class="text-gray-400">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
