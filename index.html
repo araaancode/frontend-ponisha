@@ -25,8 +25,28 @@
             </div>
 
             <div class="w-px h-10 bg-gray-300 mx-4 font-bold"></div>
-            <div class="">
-                <img src="./icon/Icon Telefon.svg" alt="Telefon">
+            <div class="flex items-center font-sm">
+                <div class="border border-white px-2 py-1 rounded-full mr-2">
+                    <i class="fas fa-phone"></i>
+                </div>
+
+                <div>
+                    <span class="mx-1">Admissions</span>
+                    <span class="mx-1">+49</span>
+                    <span class="mx-1">(0)</span>
+                    <span class="mx-1">40-2093485-00</span>
+                </div>
+
+                <div class="border border-white px-2 py-1 rounded-full mr-2">
+                    <i class="fas fa-phone"></i>
+                </div>
+
+                <div>
+                    <span class="mx-1">Admissions</span>
+                    <span class="mx-1">+49</span>
+                    <span class="mx-1">(0)</span>
+                    <span class="mx-1">40-2093485-01</span>
+                </div>
             </div>
 
             <div class="w-px h-10 bg-gray-300 mx-4 font-bold"></div>
@@ -58,8 +78,25 @@
         </div>
     </nav>
 
-    <!-- 2. Header -->
-    <header class="bg-cover bg-center h-screen text-white" style="background-image: url('header-bg.jpg');">
+
+    <!-- 2. Links -->
+    <section class="py-8 px-20">
+        <div style="color: #1b3a54;" class="flex items-center justify-center mx-auto">
+            <a href="#" class="text-center mx-8 font-bold">Universität <i class="fas fa-chevron-down mx-1"></i></a>
+            <a href="#" class="text-center mx-8 font-bold">Studiengang <i class="fas fa-chevron-down mx-1"></i></a>
+            <a href="#" class="text-center mx-8 font-bold">medizin Lehrkrankenhäuser <i
+                    class="fas fa-chevron-down mx-1"></i></a>
+            <a href="#" class="text-center mx-8 font-bold">Forschung</a>
+            <a href="#" class="text-center mx-8 font-bold">Aktuelles <i class="fas fa-chevron-down mx-1"></i></a>
+            <a href="#" class="text-center mx-8 font-bold">Kontakt</a>
+        </div>
+    </section>
+
+
+    <!-- 3. Banner -->
+    <header class="bg-cover bg-center h-screen text-white"
+        style="background: url('./assets/bilder/b-header.svg') no-repeat right;">
+
         <div class="container mx-auto px-4 h-full flex items-center justify-center">
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold">Welcome to Our Hospital</h1>
@@ -68,24 +105,44 @@
         </div>
     </header>
 
-    <img src="color.png" alt="">
 
 
-    <!-- 3. Links -->
-    <section class="bg-white py-8">
-        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4">
-            <a href="#" class="text-center py-4 bg-gray-100 rounded-md">Link 1</a>
-            <a href="#" class="text-center py-4 bg-gray-100 rounded-md">Link 2</a>
-            <a href="#" class="text-center py-4 bg-gray-100 rounded-md">Link 3</a>
-            <a href="#" class="text-center py-4 bg-gray-100 rounded-md">Link 4</a>
+
+
+    <!-- 4. two column after banner  -->
+    <section class="bg-white py-12 h-screen"
+        style="color: #1b3a54;background: url('./assets/bilder/Blue\ Color\ gradient2.png') no-repeat left">
+        <!-- icons -->
+        <div style="margin-left: 10%;">
+            <i class="fas fa-home"></i>
+            <span>Universität</span>
+            <i class="fas fa-chevron-right"></i>
+            <span>Studieren am UMCH</span>
         </div>
-    </section>
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="">Excellent, persönlich und individuell</h2>
+            <p class="mt-4 text-3xl font-bold">Medizin studieren am UMCH </p>
+        </div>
 
-    <!-- 4. Banner -->
-    <section class="bg-blue-600 text-white py-12 text-center">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold">This is Our Banner</h2>
-            <p class="mt-4">Some additional information about the banner.</p>
+        <div class="flex flex-col lg:flex-row justify-center items-center p-6">
+            <!-- First Column -->
+            <div class="w-full lg:w-1/2 bg-cover bg-center h-64 lg:h-auto"
+                style="background-image: url('https://via.placeholder.com/600x400');">
+                <div class="flex justify-center items-center h-full bg-black bg-opacity-50">
+                    <h2 class="text-white text-3xl">Column 1</h2>
+                </div>
+            </div>
+
+            <!-- Space between columns -->
+            <div class="w-6 h-6 lg:h-auto"></div>
+
+            <!-- Second Column -->
+            <div class="w-full lg:w-1/2 bg-cover bg-center h-64 lg:h-auto"
+                style="background-image: url('https://via.placeholder.com/600x400');">
+                <div class="flex justify-center items-center h-full bg-black bg-opacity-50">
+                    <h2 class="text-white text-3xl">Column 2</h2>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -248,6 +305,7 @@
         </div>
     </section>
 
+
     <!-- 14. Photos of Doctors -->
     <section class="bg-gray-100 py-12">
         <div class="container mx-auto px-4">
@@ -311,7 +369,7 @@
     </section>
 
     <!-- 17. Queuing -->
-    <section class="bg-white py-12">
+    <section class="bg-gray-100 py-12">
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8">
             <div class="flex justify-center items-center">
                 <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Book Now</button>
@@ -323,15 +381,112 @@
     </section>
 
     <!-- 18. Footer -->
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Our Hospital. All rights reserved.</p>
-            <div class="mt-4 space-x-4">
-                <a href="#" class="text-gray-400">Privacy Policy</a>
-                <a href="#" class="text-gray-400">Terms & Conditions</a>
+    <footer class="bg-gray-800 text-white py-8 px-20" style="background-color: #004d6e;">
+        <!-- First Row -->
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+            <!-- First Column: Image with text below it -->
+            <div class="text-center">
+                <img width="300px" height="150px" src="assets/logos/umch_blanco-opt.png" alt="Image 1"
+                    class="mx-auto mb-10">
+                <p class="mt-2 text-left">Universitätsmedizin Neumarkt am Mieresch Campus Hamburg</p>
+            </div>
+            <!-- Second Column: Contact Information -->
+            <div class="text-center md:text-left">
+                <p>Albert-Einstein-Ring 11-15</p>
+                <p>22761 Hamburg, Deutschland</p>
+                <p>Tel.: +49 (0) 40-2093485-00</p>
+                <p>Fax.: +49 (0) 40-2093485-09</p>
+                <p>E-Mail: info@edu.umch.de</p>
+            </div>
+            <!-- Third Column: Image with text below it -->
+            <div class="text-center">
+                <img width="65px" height="65px" src="assets/logos/UMCH rund.svg" alt="UMCH 2" class="mx-auto mb-2">
+                <p>Impressum</p>
+                <p>Datenschutz</p>
+            </div>
+            <!-- Fourth Column: Image with text below it -->
+            <div class="text-center">
+                <img width="65px" height="65px" src="assets/logos/Medaille.png" alt="Image 3" class="mx-auto w-16 h-16">
+                <div class="text-left">
+                    <p class="mt-2">George Emil Palade</p>
+                    <p>Nobelpreisgewinner </p>
+                    <p>und Namensgeber </p>
+                    <p>der Universität</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider with text -->
+        <div class="flex items-center">
+            <span class="mr-4">Eine Niederlassung der</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+
+
+
+        <!-- Second Row -->
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8 mt-8">
+            <!-- First Column: Image with text below it -->
+            <div class="text-center">
+                <img src="assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="Image 4"
+                    class="mx-auto w-16 h-16">
+                <p class="mt-2">Universität für Medizin, Pharmazie,</p>
+                <p>Naturwissenschaften und Technik</p>
+                <p>Neumarkt am Mieresch</p>
+            </div>
+            <!-- Second Column: Contact Information -->
+            <div class="text-center md:text-left">
+                <p class="font-bold">Contact Us</p>
+                <p>Phone: +123-456-7890</p>
+                <p>Email: contact@hospital.com</p>
+                <p>Address: 123 Health St, Medical City</p>
+            </div>
+            <!-- Third Column: Social Media Logos -->
+            <div class="flex justify-center space-x-4 mt-4 md:mt-0">
+                <a href="#">
+                    <i class="fas fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-itunes"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-youtube"></i>
+                </a>
+            </div>
+            <!-- Fourth Column: Image -->
+            <div class="text-center">
+                <img width="100px" height="50px" src="assets/bilder/Samy_Hoddie_outline.png" alt="Image 5"
+                    class="mx-auto w-16 h-16">
+            </div>
+        </div>
+
+        <!-- HTML with Tailwind CSS -->
+        <hr class="border-t border-gray-300 my-4">
+
+        <!-- Third Row -->
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-20 mt-8 text-center md:text-left">
+            <!-- First Column: Copyright -->
+            <div class="md:col-span-1">
+                <p>@2024 – UMCH – Universitätsmedizin Neumarkt am Mieresch Campus Hamburg</p>
+            </div>
+            <!-- Second Column: Plain Text -->
+            <div>
+                <a class="underline" href="/umch-shop">UMCH Shop</a>
+            </div>
+            <!-- Third Column: Plain Text -->
+            <div>
+                <a class="underline" href="/foundation">UMCH Medical Foundation Track</a>
+            </div>
+            <!-- Fourth Column: Plain Text -->
+            <div>
+                <a class="underline" href="/contact">Contact Us</a>
             </div>
         </div>
     </footer>
+
 
 </body>
 
