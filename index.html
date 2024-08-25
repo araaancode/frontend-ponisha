@@ -1233,54 +1233,83 @@
         </div>
     </section>
 
-
+    <div class="border-b-2 px-10 border-blue-500"></div>
     <!-- 14. Photos of Doctors -->
-    <section class="bg-white py-12">
-        <!-- Text at the Top -->
-        <div class="text-center py-8">
-            <h1 class="text-4xl font-bold text-gray-800">Our Amazing Card Slider</h1>
-        </div>
-
-        <!-- Main Container -->
-        <div class="flex">
-
-            <!-- Fixed Image at the Left -->
-            <div class="hidden lg:block w-1/4 h-screen bg-cover bg-center"
-                style="background-image: url('https://via.placeholder.com/300');">
-                <!-- Background image will cover the entire div -->
-            </div>
-
-            <!-- Card Slider in the Middle -->
+    <section class="relative flex bg-white min-h-screen">
+        <!-- Main Content Area -->
+        <div class="flex-1 p-8 lg:ml-1/3">
             <div class="flex-1 p-8">
                 <div class="relative">
                     <!-- Slider Wrapper -->
-                    <div class="slider-wrapper flex overflow-x-scroll space-x-4">
+                    <div class="slider-wrapper flex overflow-x-scroll space-x-4 my-6 py-10">
+                        <div class="mx-8 px-8">
+                            <p class="text-gray-400 mb-5 font-bold">Profitieren Sie von einem breiten
+                                Netzwerk an Experten, die am Campus
+                                praktische Seminare abhalten. </p>
+
+                            <h1 style="color: #1b3a54;" class="mb-5 text-2xl font-bold">Extracurriculare
+                                Workshops </h1>
+                            <p style="color: #1b3a54;text-align: justify;">
+                                Diese Workshops bieten Ihnen die Möglichkeit,
+                                zusätzliche Fähigkeiten zu erwerben und
+                                Ihr Wissen in verschiedenen Fachgebieten
+                                zu vertiefen. Ob es um klinische Techniken,
+                                wissenschaftliche Forschung oder persönliche
+                                Entwicklung geht, unsere extracurriculare
+                                Programme ergänzen Ihr Studium optimal
+                                und bereiten Sie umfassend auf Ihre
+                                zukünftige Karriere vor
+                            </p>
+                        </div>
+
                         <!-- Card 1 -->
-                        <div class="flex-none w-64 bg-white p-4">
-                            <img src="https://via.placeholder.com/150" alt="Card Image 1"
-                                class="w-full h-40 object-cover rounded-md mb-4">
-                            <h2 class="text-2xl font-bold mb-2">Card 1</h2>
-                            <p class="text-gray-600">This is the first card with some text content.</p>
+                        <div
+                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
+                            <img src="assets/img/12.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
+                                Anatomie Bodypainting</h2>
+                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
+                                UMFST UMCH Teacher</p>
+                            <div class="flex items-center justify-center mb-2">
+                                <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
+                                </button>
+                            </div>
                         </div>
+
                         <!-- Card 2 -->
-                        <div class="flex-none w-64 bg-white p-4">
-                            <img src="https://via.placeholder.com/150" alt="Card Image 2"
-                                class="w-full h-40 object-cover rounded-md mb-4">
-                            <h2 class="text-2xl font-bold mb-2">Card 2</h2>
-                            <p class="text-gray-600">This is the second card with some text content.</p>
+                        <div
+                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
+                            <img src="assets/img/13.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
+                                Anatomie Bodypainting</h2>
+                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
+                                UMFST UMCH Teacher</p>
+                            <div class="flex items-center justify-center mb-2">
+                                <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
+                                </button>
+                            </div>
                         </div>
+
                         <!-- Card 3 -->
-                        <div class="flex-none w-64 bg-white p-4">
-                            <img src="https://via.placeholder.com/150" alt="Card Image 3"
-                                class="w-full h-40 object-cover rounded-md mb-4">
-                            <h2 class="text-2xl font-bold mb-2">Card 3</h2>
-                            <p class="text-gray-600">This is the third card with some text content.</p>
+                        <div
+                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
+                            <img src="assets/img/10.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
+                                Anatomie Bodypainting</h2>
+                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
+                                UMFST UMCH Teacher</p>
+                            <div class="flex items-center justify-center mb-2">
+                                <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
+                                </button>
+                            </div>
                         </div>
+
+
 
                     </div>
 
                     <!-- Slider Controls -->
-                    <div class="flex justify-center items-center space-x-4">
+                    <div class="flex justify-center items-center space-x-4 my-4">
                         <!-- Left Button -->
                         <button id="prev" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
 
@@ -1312,85 +1341,103 @@
         </div>
     </section>
 
+    <div class="border-b-2 px-10 border-blue-500"></div>
     <!-- 15. Another Video Gallery -->
-    sperator line
-    <section class="bg-white py-12">
-        <!-- Text at the Top -->
-        <div class="text-center py-8">
-            <h1 class="text-4xl font-bold text-gray-800">Our Amazing Card Slider</h1>
-        </div>
-
-        <!-- Main Container -->
-        <div class="flex">
-
-            <!-- Fixed Image at the Left -->
-            <div class="hidden lg:block w-1/4 h-screen bg-cover bg-center"
-                style="background-image: url('https://via.placeholder.com/300');">
-                <!-- Background image will cover the entire div -->
-            </div>
-
-            <!-- Card Slider in the Middle -->
-
-
-        </div>
-    </section>
-
-    <!-- 16. Recreational Facilities -->
-    <section class="bg-white py-12">
-        <div class="container mx-auto px-4 py-8">
-            <div class="flex items-start space-x-6">
-                <!-- Text Area -->
-                <div class="w-1/4 bg-white p-4 rounded-lg shadow-lg">
-                    <h2 class="text-2xl font-bold mb-4">Video Gallery</h2>
-                    <p class="text-gray-700">Here is a collection of our latest videos. Enjoy!</p>
+    <section class="relative flex bg-gray-100 h-50 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex items-start space-x-4">
+                <!-- Text Section -->
+                <div class="w-1/4">
+                    <p>Studierende erzählen</p>
+                    <h1 class="text-2xl font-bold">Exklusive Einblicke in
+                        den UMCH</h1>
+                    <p class="mt-2 text-gray-600 text-justify">Erleben Sie den UMCH durch die Augen
+                        unserer Studierenden! Sie berichten von
+                        ihren Erfahrungen auf dem modernen
+                        Medizincampus und geben Ihnen einen
+                        Einblick in die erstklassige Ausstattung,
+                        die praxisnahe Ausbildung, die
+                        vielfältigen Freizeitmöglichkeiten und die
+                        attraktive Lage des Campus. Sehen Sie
+                        sich die Clips an, um exklusive Einblicke
+                        und nützliche Ratschläge zu erhalten. Er-
+                        fahren Sie aus erster Hand, warum der
+                        UMCH der ideale Ort zum Studieren ist,
+                        und erhalten Sie wertvolle Tipps für das
+                        Campusleben.</p>
                 </div>
 
-                <!-- Video Gallery -->
-                <div class="w-3/4 relative">
-                    <div id="video-slider" class="flex space-x-4 overflow-hidden video-slide">
-                        <!-- Video Item 1 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3">
-                            <video controls class="w-full rounded-lg shadow-lg">
-                                <source src="video1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <!-- Video Item 2 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3">
-                            <video controls class="w-full rounded-lg shadow-lg">
+                <!-- Video Slider Section -->
+                <div class="w-3/4 mx-5 py-20">
+                    <!-- Video Slider -->
+                    <div id="slider" class="slider flex overflow-x-auto space-x-4 scroll-smooth mb-4">
+                        <!-- Card 1 -->
+                        <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden">
+                            <video class="w-full h-full object-cover" poster="assets/img/14.png">
                                 <source src="video2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+
+                            <div style="height: 35%;" class="overlay-text">
+                                <h1>Campustalk</h1>
+                                <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
+                                <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
+                                    ein Studium am UMCH
+                                    entschieden hat</p>
+                            </div>
                         </div>
-                        <!-- Video Item 3 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/3">
-                            <video controls class="w-full rounded-lg shadow-lg">
-                                <source src="video3.mp4" type="video/mp4">
+                          <!-- Card 2 -->
+                          <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden">
+                            <video class="w-full h-full object-cover" poster="assets/img/15.png">
+                                <source src="video2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+
+                            <div style="height: 35%;" class="overlay-text">
+                                <h1>Campustalk</h1>
+                                <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
+                                <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
+                                    ein Studium am UMCH
+                                    entschieden hat</p>
+                            </div>
                         </div>
+
                     </div>
 
-                    <!-- Navigation Buttons and Pagination -->
-                    <div class="absolute bottom-4 inset-x-0 flex items-center justify-between px-4">
-                        <button id="prev" class="bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700">
-                            Prev
+                    <!-- Navigation and Pagination -->
+                    <div class="flex justify-center items-center space-x-4">
+                        <!-- Left Button -->
+                        <button id="prev" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
                         </button>
-                        <div class="flex space-x-2">
-                            <button class="w-3 h-3 bg-gray-500 rounded-full"></button>
-                            <button class="w-3 h-3 bg-gray-500 rounded-full"></button>
-                            <button class="w-3 h-3 bg-gray-500 rounded-full"></button>
+
+                        <!-- Pagination Dots -->
+                        <div class="flex space-x-1 px-10 py-4 rounded-full bg-gray-400">
+                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
+                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
+                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
                         </div>
-                        <button id="next" class="bg-gray-800 text-white p-2 rounded-full shadow-md hover:bg-gray-700">
-                            Next
+
+                        <!-- Right Button -->
+                        <button id="next" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
-    <!-- 17. -->
+    <!-- 16. -->
     <section class="bg-white py-12">
         <div class="text-center mx-auto px-4 py-8">
             <p class="font-bold text-gray-400">Gemeinschaft, Aktivitäten und einzigartige Erfahrunge</p>
