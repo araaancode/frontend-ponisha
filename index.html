@@ -7,6 +7,14 @@
     <title>UMCH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="https://edu.umch.de/wp-content/uploads/2018/09/favicon-32x32.opt_.png"
+        type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
     <style>
         .slider::-webkit-scrollbar {
             display: none;
@@ -84,17 +92,36 @@
         }
     </style>
 
+    <style>
+        .svg {
+            fill: #fff;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
+            font-weight: bold;
+        }
 
+        .camera-svg {
+            width: 20px;
+            height: 20px;
+            filter: invert(1%) sepia(0%) saturate(0%) hue-rotate(0) brightness(119%) contrast(119%);
+        }
 
+        .whatsup-icon {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
 
 </head>
 
-<body class="bg-gray-100 text-gray-900 antialiased">
+<body>
 
-    <!-- 1. Navbar -->
-    <nav style="background-color: #004f71;color:#fff;font-size: small;" class="bg-white shadow-md nav-1 px-4">
+    <!-- 1. Navbar and Navbar -->
+    <nav style="background-color: #004f71;color:#fff;font-size: small;" class="bg-white shadow-md nav-1 px-8">
         <div class="container mx-auto py-4 flex justify-between items-center">
-            <div class="hidden md:flex space-x-2 mr-2">
+            <div class="hidden md:flex space-x-2 mr-1">
                 <a href="#" class="text-gray-200 font-sm font-bold">News</a>
                 <a href="#" class="text-gray-200 font-sm font-bold">Events</a>
                 <a href="#" class="text-gray-200 font-sm font-bold">Press</a>
@@ -102,120 +129,41 @@
                 <a href="#" class="text-gray-200 font-sm font-bold ">Shop</a>
             </div>
 
-            <div class="w-px h-10 bg-gray-300 font-bold"></div>
-            <div class="flex items-center font-sm mx-2">
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg style="width: 35px;height: 35px;color: #fff;" id="Ebene_2" data-name="Ebene 2"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 39.1 39.1">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                clip-path: url(#clippath);
-                            }
-
-                            .cls-2,
-                            .cls-3 {
-                                fill: none;
-                            }
-
-                            .cls-2,
-                            .cls-4 {
-                                stroke-width: 0px;
-                            }
-
-                            .cls-3 {
-                                stroke: #fff;
-                                stroke-width: 1.5px;
-                            }
-
-                            .cls-4 {
-                                fill: #fff;
-                            }
-                        </style>
-                        <clipPath id="clippath">
-                            <rect class="cls-2" width="39.1" height="39.1" />
-                        </clipPath>
-                    </defs>
-                    <g id="Ebene_1-2" data-name="Ebene 1">
-                        <g class="cls-1">
-                            <circle class="cls-3" cx="19.55" cy="19.55" r="18.8" />
-                            <path class="cls-4"
-                                d="M25.75,26.78c-.38,1.11-1.04,1.92-1.93,2.33-.42.19-.87.29-1.34.29-.5,0-1.02-.11-1.56-.32-2.66-1.08-4.98-2.6-6.91-4.5,0,0,0,0-.01-.01-1.91-1.93-3.42-4.26-4.51-6.91-.42-1.03-.43-2.03-.04-2.9.41-.89,1.21-1.56,2.33-1.93.5-.17.98-.16,1.44,0,1.03.38,3.2,3.33,3.26,4.44.05,1.06-.74,1.6-1.11,1.86-.32.22-.75.14-.97-.18-.22-.32-.14-.75.18-.97.45-.3.52-.44.51-.64-.07-.6-1.81-2.97-2.36-3.21-.16-.06-.32-.06-.51,0-.74.25-1.26.66-1.5,1.19-.23.51-.21,1.12.06,1.79,1.01,2.49,2.43,4.66,4.2,6.45,0,0,0,0,0,0,1.8,1.78,3.97,3.19,6.46,4.21.67.27,1.29.29,1.79.06.53-.24.94-.76,1.19-1.5.06-.19.07-.35,0-.51-.24-.54-2.61-2.28-3.22-2.36-.19,0-.33.06-.63.51-.22.32-.65.4-.97.18-.32-.22-.4-.65-.18-.97.26-.38.8-1.17,1.86-1.12,1.11.06,4.06,2.23,4.45,3.26.17.46.17.94,0,1.44" />
-                            <path class="cls-4"
-                                d="M18.79,14.48c0-.39.31-.7.7-.7,2.62,0,4.75,2.13,4.75,4.75,0,.39-.31.7-.7.7s-.7-.31-.7-.7c0-1.85-1.5-3.35-3.35-3.35-.39,0-.7-.31-.7-.7" />
-                            <path class="cls-4"
-                                d="M27.58,19.22c-.39,0-.7-.31-.7-.7,0-1.98-.77-3.84-2.17-5.23-1.4-1.4-3.26-2.17-5.24-2.17-.38,0-.7-.31-.7-.7s.31-.7.7-.7c2.35,0,4.56.91,6.22,2.58s2.58,3.87,2.58,6.22c0,.39-.31.7-.7.7" />
-                        </g>
-                    </g>
-                </svg>
-                <div class="mx-2">
+            <div class="h-8 w-px bg-white mx-2"></div>
+            <div class="flex items-center font-sm mx-1">
+                <div class="flex mx-2 items-center font-bold text-gray-200">
+                    <img class="svg mr-2" src="assets/icon/Icon Telefon.svg" alt="Telefon">
                     <span>Admissions</span>
                     <span>+49</span>
                     <span>(0)</span>
                     <span>40-2093485-00</span>
                 </div>
-                <?xml version="1.0" encoding="UTF-8"?>
-                <svg style="width: 35px;height: 35px;color: #fff;" id="Ebene_2" data-name="Ebene 2"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 39.1 39.1">
-                    <defs>
-                        <style>
-                            .cls-1 {
-                                clip-path: url(#clippath);
-                            }
-
-                            .cls-2,
-                            .cls-3 {
-                                fill: none;
-                            }
-
-                            .cls-2,
-                            .cls-4 {
-                                stroke-width: 0px;
-                            }
-
-                            .cls-3 {
-                                stroke: #ffea43;
-                                stroke-width: 1.5px;
-                            }
-
-                            .cls-4 {
-                                fill: #ffea43;
-                            }
-                        </style>
-                        <clipPath id="clippath">
-                            <rect class="cls-2" width="39.1" height="39.1" />
-                        </clipPath>
-                    </defs>
-                    <g id="Ebene_1-2" data-name="Ebene 1">
-                        <g class="cls-1">
-                            <circle class="cls-3" cx="19.55" cy="19.55" r="18.8" />
-                            <path class="cls-4"
-                                d="M25.75,26.78c-.38,1.11-1.04,1.92-1.93,2.33-.42.19-.87.29-1.34.29-.5,0-1.02-.11-1.56-.32-2.66-1.08-4.98-2.6-6.91-4.5,0,0,0,0-.01-.01-1.91-1.93-3.42-4.26-4.51-6.91-.42-1.03-.43-2.03-.04-2.9.41-.89,1.21-1.56,2.33-1.93.5-.17.98-.16,1.44,0,1.03.38,3.2,3.33,3.26,4.44.05,1.06-.74,1.6-1.11,1.86-.32.22-.75.14-.97-.18-.22-.32-.14-.75.18-.97.45-.3.52-.44.51-.64-.07-.6-1.81-2.97-2.36-3.21-.16-.06-.32-.06-.51,0-.74.25-1.26.66-1.5,1.19-.23.51-.21,1.12.06,1.79,1.01,2.49,2.43,4.66,4.2,6.45,0,0,0,0,0,0,1.8,1.78,3.97,3.19,6.46,4.21.67.27,1.29.29,1.79.06.53-.24.94-.76,1.19-1.5.06-.19.07-.35,0-.51-.24-.54-2.61-2.28-3.22-2.36-.19,0-.33.06-.63.51-.22.32-.65.4-.97.18-.32-.22-.4-.65-.18-.97.26-.38.8-1.17,1.86-1.12,1.11.06,4.06,2.23,4.45,3.26.17.46.17.94,0,1.44" />
-                            <path class="cls-4"
-                                d="M18.79,14.48c0-.39.31-.7.7-.7,2.62,0,4.75,2.13,4.75,4.75,0,.39-.31.7-.7.7s-.7-.31-.7-.7c0-1.85-1.5-3.35-3.35-3.35-.39,0-.7-.31-.7-.7" />
-                            <path class="cls-4"
-                                d="M27.58,19.22c-.39,0-.7-.31-.7-.7,0-1.98-.77-3.84-2.17-5.23-1.4-1.4-3.26-2.17-5.24-2.17-.38,0-.7-.31-.7-.7s.31-.7.7-.7c2.35,0,4.56.91,6.22,2.58s2.58,3.87,2.58,6.22c0,.39-.31.7-.7.7" />
-                        </g>
-                    </g>
-                </svg>
-                <div class="mx-2">
-                    <span>Admissions</span>
+                <div class="flex mx-2 items-center font-bold text-gray-200">
+                    <img class="svg mr-2" src="assets/icon/Icon Telefon.svg" alt="Telefon">
+                    <span>Students</span>
                     <span>+49</span>
                     <span>(0)</span>
                     <span>40-2093485-01</span>
                 </div>
             </div>
 
-            <div class="w-px h-10 bg-gray-300 mx-4 font-bold"></div>
-            <div class="py-3 px-2 rounded-full border border-white border-1 mx-4">
-                <img style="color: #fff;" width="20px" height="20px" src="assets/icon/Icon Camera.svg" alt="Camera">
-            </div>
-            <img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/128/555/555613.png" alt="">
-            <i class="fas fa-chevron-down mx-4"></i>
 
-            <div class="w-px h-10 bg-gray-300 mx-2 font-bold"></div>
+            <!-- nav 3 -->
+            <div class="flex items-center mr-10">
+                <div class="h-8 w-px bg-white mx-4"></div>
+                <div class="p-1 rounded-full border border-white border-1 mr-2">
+                    <img class="camera-svg" src="assets/icon/Icon Camera.svg" alt="Camera">
+                </div>
+                <img class="whatsup-icon" src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png"
+                    alt="whatsup-icon">
+            </div>
+            <div class="flex items-center">
+                <img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/128/555/555613.png" alt="">
+                <i class="fas fa-chevron-down ml-2"></i>
+                <div class="h-8 w-px bg-white mx-4"></div>
+            </div>
+
+            <!-- nav 4 -->
             <div class="flex items-center justify-betweentext-gray-200 px-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-8">
@@ -228,7 +176,7 @@
         </div>
     </nav>
 
-    <nav style="background-color: #1b3a54;color:#fff;" class="bg-white shadow-md nav-2 py-6 px-10">
+    <header style="background-color: #1b3a54;color:#fff;" class="bg-white shadow-md nav-2 py-6 px-10">
         <div class="flex flex-wrap justify-between items-center p-4 ">
             <!-- Left Side Elements -->
             <div class="flex space-x-4">
@@ -261,9 +209,7 @@
                 </div>
             </div>
         </div>
-
-
-    </nav>
+    </header>
 
     <!-- 2. Links -->
     <section class="py-8 px-20">
@@ -280,26 +226,26 @@
 
     <!-- 3. Banner -->
     <!-- Header Section -->
-    <header class="relative w-full h-[500px] header-bg">
+    <header class="relative w-full h-[600px] header-bg">
         <!-- Vertical Divs at the Bottom Right -->
         <div class="absolute right-4 top-2/4 flex flex-col items-end space-y-4">
             <!-- First Div with Text -->
-            <div style="color: #004f71;margin-bottom: 100px;"
-                class=" bg-yellow-300 text-white px-4 py-3 rounded transform -rotate-90 origin-right">
+            <div style="color: #004f71;margin-bottom: 70px;"
+                class=" bg-yellow-300 text-white px-4 py-6 transform -rotate-90 origin-right">
                 <p>Jetzt bewerben</p>
             </div>
             <!-- Second Div with Icons -->
-            <div style="background-color: #004f71;"
-                class="text-white px-4 py-2 rounded transform -rotate-90 origin-right">
+            <div style="background-color: #004f71;" class="text-white px-4 py-2 transform -rotate-90 origin-right z-10">
                 <div class="flex flex-row space-x-2">
-                    <img class="rotate-90" width="25px" height="25px" style="margin-bottom: 5px;"
-                        src="assets/icon/Icon Telefon.svg" alt="Telefon">
-                    <img class="rotate-90" width="25px" height="25px" style="margin-bottom: 5px;"
-                        src="assets/icon/Icon Camera.svg" alt="Camera">
-                    <img class="rotate-90" width="25px" height="25px" style="margin-bottom: 5px;"
-                        src="assets/icon/Icon Letter.svg" alt="Letter">
-                    <img class="rotate-90" width="25px" height="25px" style="margin-bottom: 5px;"
-                        src="assets/icon/Icon Hospital.svg" alt="Hospital">
+                    <img class="rotate-90 font-bold" width="40px" height="40px"
+                        style="margin-bottom: 15px;margin-right: 10px;" src="assets/icon/Icon Telefon.svg"
+                        alt="Telefon">
+                    <img class="rotate-90 font-bold" width="30px" height="30px"
+                        style="margin-bottom: 15px;margin-right: 10px;" src="assets/icon/Icon Camera.svg" alt="Camera">
+                    <img class="rotate-90 font-bold" width="30px" height="30px"
+                        style="margin-bottom: 15px;margin-right: 10px;" src="assets/icon/Icon Letter.svg" alt="Letter">
+                    <img class="rotate-90 font-bold" width="30px" height="30px"
+                        style="margin-bottom: 15px;margin-right: 10px;" src="assets/icon/Icon Uni.svg" alt="Hospital">
                 </div>
             </div>
         </div>
@@ -313,9 +259,9 @@
     <!-- 4. two column after banner  -->
     <!-- Section -->
     <!-- Responsive Section -->
-    <section class="relative flex bg-white min-h-screen">
+    <section class="relative flex bg-white">
         <!-- Left Image (fixed) -->
-        <div class="hidden lg:block bg-cover bg-center bg-fixed w-1/5">
+        <div class="hidden lg:block bg-cover bg-center bg-fixed w-1/6 h-10">
             <img src="assets/bilder/Blue Color gradient2.png" alt="Blue">
         </div>
 
@@ -345,8 +291,8 @@
             </div>
 
             <div class="text-center">
-                <p class="text-gray-500">Excellent, persönlich und individuell</p>
-                <h1 style="color: #1b3a54;" class="text-2xl font-bold text-center">Medizin studieren am UMCH</h1>
+                <p class="text-gray-400 mb-2 font-bold">Excellent, persönlich und individuell</p>
+                <h1 style="color: #1b3a54;" class="text-3xl font-bold text-center">Medizin studieren am UMCH</h1>
             </div>
             <!-- Cards Container -->
             <div class="flex flex-col mt-8 lg:flex-row gap-6">
@@ -469,149 +415,135 @@
 
 
     <!-- 5. About -->
-    <section class="relative flex bg-gray-100 h-50 py-12">
-        <div class="container mx-auto px-4">
-            <div class="flex items-start space-x-4">
-                <!-- Text Section -->
-                <div class="w-1/4">
-                    <p>Studierende erzählen</p>
-                    <h1 class="text-2xl font-bold">Exklusive Einblicke in
-                        den UMCH</h1>
-                    <p class="mt-2 text-gray-600 text-justify">Erleben Sie den UMCH durch die Augen
-                        unserer Studierenden! Sie berichten von
-                        ihren Erfahrungen auf dem modernen
-                        Medizincampus und geben Ihnen einen
-                        Einblick in die erstklassige Ausstattung,
-                        die praxisnahe Ausbildung, die
-                        vielfältigen Freizeitmöglichkeiten und die
-                        attraktive Lage des Campus. Sehen Sie
-                        sich die Clips an, um exklusive Einblicke
-                        und nützliche Ratschläge zu erhalten. Er-
-                        fahren Sie aus erster Hand, warum der
-                        UMCH der ideale Ort zum Studieren ist,
-                        und erhalten Sie wertvolle Tipps für das
-                        Campusleben.</p>
+    <section class="relative flex bg-gray-100 h-50">
+        <div class="flex items-center justify-center mx-auto w-full p-20 space-x-4">
+            <!-- Text Section -->
+            <div class="w-1/10 md:mr-12">
+                <p class="font-bold text-gray-400 mb-4">Studierende erzählen</p>
+                <h1 style="color: #1b3a54;" class="text-3xl font-bold">Exklusive Einblicke in
+                    den UMCH</h1>
+                <p style="color: #1b3a54;" class="mt-4 text-gray-600 text-justify">Erleben Sie den UMCH durch die
+                    Augen
+                    unserer Studierenden! Sie berichten von
+                    ihren Erfahrungen auf dem modernen
+                    Medizincampus und geben Ihnen einen
+                    Einblick in die erstklassige Ausstattung,
+                    die praxisnahe Ausbildung, die
+                    vielfältigen Freizeitmöglichkeiten und die
+                    attraktive Lage des Campus. Sehen Sie
+                    sich die Clips an, um exklusive Einblicke
+                    und nützliche Ratschläge zu erhalten. Er-
+                    fahren Sie aus erster Hand, warum der
+                    UMCH der ideale Ort zum Studieren ist,
+                    und erhalten Sie wertvolle Tipps für das
+                    Campusleben.</p>
+            </div>
+            <!-- Video Slider Section -->
+            <div class="w-4/10">
+                <!-- Video Slider -->
+                <div id="slider" class="slider flex overflow-x-auto space-x-4 scroll-smooth mb-4">
+                    <!-- Card 1 -->
+                    <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden">
+
+                        <video class="w-full h-full object-cover"
+                            poster="https://i.ytimg.com/vi/zTfe8IIVWJQ/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLBin-mGmvype8M0v3OsuE3UGKJ1Rw">
+                            <source src="https://www.youtube.com/shorts/zTfe8IIVWJQ" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div style="background-color: #1b3a54;" class="px-3 py-1 rounded-full play-icon z-1">&#9658;
+                        </div>
+                        <div style="height: 35%;" class="overlay-text">
+                            <h1>Campustalk</h1>
+                            <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
+                            <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
+                                ein Studium am UMCH
+                                entschieden hat</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden py-10">
+                        <video class="w-full h-full object-cover">
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div style="background-color: #1b3a54;" class="px-3 py-1 rounded-full play-icon z-1">&#9658;
+                        </div>
+                        <div style="height: 35%;" class="overlay-text">
+                            <h1>Campustalk</h1>
+                            <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
+                            <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
+                                ein Studium am UMCH
+                                entschieden hat</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden py-10">
+                        <video class="w-full h-full object-cover">
+                            <source src="video2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div style="background-color: #1b3a54;" class="px-3 py-1 rounded-full play-icon z-1">&#9658;
+                        </div>
+                        <div style="height: 35%;" class="overlay-text">
+                            <h1>Campustalk</h1>
+                            <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
+                            <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
+                                ein Studium am UMCH
+                                entschieden hat</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Video Slider Section -->
-                <div class="w-3/4 mx-5 py-20">
-                    <!-- Video Slider -->
-                    <div id="slider" class="slider flex overflow-x-auto space-x-4 scroll-smooth mb-4">
-                        <!-- Card 1 -->
-                        <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden">
+                <!-- Navigation and Pagination -->
+                <div class="flex justify-center items-center space-x-4">
+                    <!-- Left Button -->
+                    <button id="prev" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
 
-                            <video class="w-full h-full object-cover"
-                                poster="https://i.ytimg.com/vi/zTfe8IIVWJQ/oar2.jpg?sqp=-oaymwEdCJUDENAFSFWQAgHyq4qpAwwIARUAAIhCcAHAAQY=&rs=AOn4CLBin-mGmvype8M0v3OsuE3UGKJ1Rw">
-                                <source src="https://www.youtube.com/shorts/zTfe8IIVWJQ" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div style="background-color: #1b3a54;" class="px-3 py-1 rounded-full play-icon z-1">&#9658;
-                            </div>
-                            <div style="height: 35%;" class="overlay-text">
-                                <h1>Campustalk</h1>
-                                <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
-                                <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
-                                    ein Studium am UMCH
-                                    entschieden hat</p>
-                            </div>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </button>
 
-                        <!-- Card 2 -->
-                        <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden py-10">
-                            <video class="w-full h-full object-cover">
-                                <source src="video2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div style="background-color: #1b3a54;" class="px-3 py-1 rounded-full play-icon z-1">&#9658;
-                            </div>
-                            <div style="height: 35%;" class="overlay-text">
-                                <h1>Campustalk</h1>
-                                <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
-                                <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
-                                    ein Studium am UMCH
-                                    entschieden hat</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden py-10">
-                            <video class="w-full h-full object-cover">
-                                <source src="video2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div style="background-color: #1b3a54;" class="px-3 py-1 rounded-full play-icon z-1">&#9658;
-                            </div>
-                            <div style="height: 35%;" class="overlay-text">
-                                <h1>Campustalk</h1>
-                                <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
-                                <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
-                                    ein Studium am UMCH
-                                    entschieden hat</p>
-                            </div>
-                        </div>
+                    <!-- Pagination Dots -->
+                    <div class="flex space-x-1 px-10 py-4 rounded-full bg-gray-400">
+                        <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
+                        <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
+                        <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
                     </div>
 
-                    <!-- Navigation and Pagination -->
-                    <div class="flex justify-center items-center space-x-4">
-                        <!-- Left Button -->
-                        <button id="prev" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
+                    <!-- Right Button -->
+                    <button id="next" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                            </svg>
-                        </button>
-
-                        <!-- Pagination Dots -->
-                        <div class="flex space-x-1 px-10 py-4 rounded-full bg-gray-400">
-                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
-                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
-                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
-                        </div>
-
-                        <!-- Right Button -->
-                        <button id="next" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                            </svg>
-
-                        </button>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <!-- 6. Photo Slider -->
-    <!-- <section class="py-12">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-bold text-center">Photo Gallery</h2>
-            <div class="mt-4 flex space-x-4 overflow-x-auto">
-                <img src="photo1.jpg" alt="Photo 1" class="rounded-lg w-1/3">
-                <img src="photo2.jpg" alt="Photo 2" class="rounded-lg w-1/3">
-                <img src="photo3.jpg" alt="Photo 3" class="rounded-lg w-1/3">
-            </div>
-        </div>
-    </section> -->
 
     <!-- 7. Contact Section -->
-    <section class="relative flex flex-col items-center min-h-screen bg-white px-20 my-4 py-20">
+    <section class="relative flex flex-col items-center min-h-screen bg-white">
         <!-- Section Title Centered -->
-        <div class="w-full text-center pt-4 mt-10">
-            <p class="text-gray-400 font-bold mb-2">Praxisnah ausgebildet</p>
-            <h1 class="text-4xl font-bold">UMCH Lehrkrankenhäuser & Lehrpraxen</h1>
+        <div class="flex justify-center items-center flex-col w-full text-center pt-4 mt-10">
+            <p class="text-gray-400 font-bold mb-4">Praxisnah ausgebildet</p>
+            <h1 style="color: #1b3a54;" class="text-4xl font-bold mb-6">UMCH Lehrkrankenhäuser & Lehrpraxen</h1>
         </div>
 
-        <div class="flex flex-1 w-full">
+        <div class="flex w-full">
             <!-- Left Column -->
-            <div class="flex-1 px-2 flex flex-col justify-center ml-10">
+            <div style="margin-left: 120px;" class="flex-1 px-2 flex flex-col w-50 justify-center">
                 <div class="w-full">
-                    <p class="text-gray-400 font-bold">Praxisnah ausgebildet</p>
-                    <h1 class="text-4xl font-bold">UMCH Lehrkrankenhäuser & Lehrpraxen</h1>
+                    <p class="text-gray-400 font-bold mb-4">Theorie und Praxis Hand in Hand</p>
+                    <h1 style="color: #1b3a54;" class="text-3xl font-bold">Klinische Lehre am UMCH</h1>
                 </div>
-                <p class="text-lg mb-4 text-justify">
+                <p style="color: #1b3a54;" class="text-lg my-4 text-justify">
                     Eine zentrale Stärke des UMCH ist die Kooperation mit über 30 Lehrkrankenhäusern in
                     Deutschland. Diese Partnerschaften ermöglichen eine ausgewogene Kombination aus
                     theoretischem Unterricht am Hamburger Campus und praktischen Ausbildungsphasen in
@@ -627,15 +559,15 @@
                     optimal auf das Berufsleben vor.
                 </p>
                 <div class="flex justify-center mt-10">
-                    <button class="py-3 px-12 text-gray-800 border border-gray-300 w-64 rounded-full">
+                    <button class="py-2 text-gray-800 border border-gray-300 w-64 rounded-full">
                         Mehr +
                     </button>
                 </div>
             </div>
 
             <!-- Middle Column with Image -->
-            <div class="flex-1 px-2 py-8 flex items-center justify-center">
-                <img src="assets/img/5.png" alt="Middle Image" class="object-cover">
+            <div class="flex flex-1 items-center justify-center w-50 mr-20">
+                <img src="assets/img/5.png" alt="Praxisnah ausgebildet" class="object-cover">
             </div>
 
             <!-- Right Full Height Sticked Image -->
@@ -647,267 +579,213 @@
 
 
     <!-- 8. Features -->
-    <section class="bg-white flex items-center mx-auto justify-center p-10">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center md:items-start bg-white overflow-hidden">
-                <!-- Left Image -->
-                <div style="width: 400px;height: 600px;">
-                    <img src="side1.png" alt="side1" class="w-full h-50 object-cover">
-                </div>
-                <!-- Right Content -->
-                <div class="bg-gradient-to-l from-[#1b3a54] to-[#009ad1] shadow p-6 w-full lg:w-1/2 px-10 text-white">
-                    <h2 class="text-2xl font-semibold mb-4">Intensive Praxisintegration für Studierende
-                        in Zusammenarbeit mit regionalen
-                        Lehrkrankenhäusern</h2>
-                    <ul class="text-white space-y-4">
-                        <li class="flex items-center">
-                            <span class="w-12 h-12 text-white rounded-full flex items-center justify-center mr-4">
-                                <img src="assets/icon/Icon Hospital.svg" alt="Hospital">
-                            </span>
-                            <p class="text-white">Über 30 Lehrkrankenhäuser und über 100 Lehrpraxen in
-                                Deutschland und anderen europäischen Ländern</p>
-                        </li>
+    <section>
+        <div class="flex flex-col md:flex-row items-center md:items-stretch justify-center mx-auto mt-20 max-w-4xl">
+            <!-- Left Column - Image -->
+            <div class="w-full md:w-3/8">
+                <img src="side2.png" alt="side2" class="w-full h-full object-cover">
+            </div>
 
-                        <li class="flex items-center">
-                            <span class="w-8 h-8 text-white rounded-full flex items-center justify-center mr-4">
-                                <img src="assets/icon/Icon Hospital.svg" alt="Hospital">
-                            </span>
-                            <p class="text-white">4 wöchiges Praktikum ab dem 1. Studienjahr im
-                                Lehrkrankenhaus möglich</p>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-8 h-8text-white rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-heart"></i>
-                            </span>
-                            <p class="text-white">Wahl des Lehrkrankenhauses für Studierende im 2. Studienjahr</p>
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-8 h-8 text-white rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <p class="text-white">Regional verwurzelt bleiben durch Zuteilung in Lehrkrankenhäuser
-                                deiner Heimatregion</p>
-                        </li>
+            <!-- Right Column - List of Icons and Text -->
+            <div class="w-full md:w-5/8 bg-gradient-to-l from-[#005a7f] to-[#0082b0] p-10">
+                <h1 class="text-gray-100 text-2xl font-bold ml-6 mb-6">Intensive Praxisintegration für Studierende
+                    in Zusammenarbeit mit regionalen
+                    Lehrkrankenhäusern </h1>
+                <ul>
+                    <li class="flex items-center">
+                        <span style="color: #ffea43;" class="mr-6 mt-3">
+                            <i class="ri-hospital-line text-3xl"></i>
+                        </span>
+                        <span class="text-gray-100 text-sm">Über 30 Lehrkrankenhäuser und über 100 Lehrpraxen in
+                            Deutschland und anderen europäischen Ländern</span>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <span style="color: #ffea43;" class="mr-6 mt-3">
+                            <i class="ri-group-3-line text-3xl"></i>
+                        </span>
+                        <span class="text-gray-100 text-sm">4 wöchiges Praktikum ab dem 1. Studienjahr im
+                            Lehrkrankenhaus möglich</span>
+                    </li>
 
-                        <li class="flex items-center">
-                            <span class="w-12 h-12 text-white rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <p class="text-white">Frühzeitiger Einblick in den Klinikalltag ab dem 3. bis 6.
-                                Studienjahr</p>
-                        </li>
+                    <li class="flex items-center mt-4">
+                        <span style="color: #ffea43;" class="mr-0 mt-3 flex items-center">
+                            <i class="ri-checkbox-line text-3xl"></i>
+                        </span>
+                        <span class="text-gray-100 text-sm ml-6">Wahl des Lehrkrankenhauses für Studierende im 2. Studienjahr</span>
+                    </li>
 
-                        <li class="flex items-center">
-                            <span class="w-12 h-12 text-white rounded-full flex items-center justify-center mr-4">
-                                <img src="assets/icon/Icon Calender.svg" alt="Calender">
-                            </span>
-                            <p class="text-white">8 Wochen klinische Phase im 3. Studienjahr</p>
-                        </li>
+                    <li class="flex items-center mt-4">
+                        <span style="color: #ffea43;" class="mr-6 mt-3">
+                            <i class="ri-map-pin-line text-3xl"></i>
+                        </span>
+                        <span class="text-gray-100 text-sm">Regional verwurzelt bleiben durch Zuteilung in Lehrkrankenhäuser
+                            deiner Heimatregion</span>
+                    </li>
 
-                        <li class="flex items-center">
-                            <span class="w-12 h-12 text-white rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <p class="text-white">8 Wochen klinische Phase im 3. Studienjahr</p>
-                        </li>
+                    <li class="flex items-center mt-4">
+                        <span style="color: #ffea43;" class="mr-6 mt-3 rotate-90">
+                            <i class="ri-search-line text-3xl"></i>
+                        </span>
+                        <span class="text-gray-100 text-sm">Frühzeitiger Einblick in den Klinikalltag ab dem 3. bis 6. Studienjahr</span>
+                    </li>
 
-                        <li class="flex items-center">
-                            <span class="w-12 h-12 text-white rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <p class="text-white">12 bis 14 Wochen klinische Phase im 4. bis 6. Studienjahr</p>
-                        </li>
+                    <li class="flex items-center mt-4">
+                        <span style="color: #ffea43;" class="mr-6 mt-3 w-8 h-8">
+                           <img src="assets/icon/Icon Calender.svg" alt="Calender">
+                        </span>
+                        <span class="text-gray-100 text-sm">8 Wochen klinische Phase im 3. Studienjah</span>
+                    </li>
+                    
+                    <li class="flex items-center mt-4">
+                        <span style="color: #ffea43;" class="mr-6 mt-3">
+                            <i class="ri-calendar-line text-3xl"></i>
+                        </span>
+                        <span class="text-gray-100 text-sm">12 bis 14 Wochen klinische Phase im 4. bis 6. Studienjahr</span>
+                    </li>
+                      
+                    <li class="flex items-center mt-4">
+                        <span style="color: #ffea43;" class="mr-6 mt-3 w-16 h-16">
+                            <img src="assets/icon/Icon Award.svg" alt="">
+                        </span>
+                        <span class="text-gray-100 text-sm">Das UMCH-Qualitätsmanagement garantiert eine Ausbildung auf
+                            höchsten Standards und stellt eine ganzheitliche klinische Lehre sicher</span>
+                    </li>
 
-                        <li class="flex items-center">
-                            <span class="w-12 h-12 text-white rounded-full flex items-center justify-center mr-4">
-                                <img src="assets/icon/Icon Award.svg" alt="Award">
-                            </span>
-                            <p class="text-white">Das UMCH-Qualitätsmanagement garantiert eine Ausbildung auf
-                                höchsten Standards und stellt eine ganzheitliche klinische Lehre sicher</p>
-                        </li>
-
-                        <li class="flex items-center">
-                            <span
-                                class="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-star"></i>
-                            </span>
-                            <p class="text-white">Studierende erhalten Einblicke in xyxyxy Fachbereiche der Medizin
-                            </p>
-                        </li>
-
-
-                    </ul>
-                </div>
+                    <li class="flex items-center mt-4">
+                        <span style="color: #ffea43;" class="mr-6 mt-3 w-10 h-10">
+                            <img src="assets/icon/Icon Hospital.svg" alt="">
+                        </span>
+                        <span class="text-gray-100 text-sm">Studierende erhalten Einblicke in xyxyxy Fachbereiche der Medizin</span>
+                    </li>
+                </ul>
             </div>
         </div>
-
     </section>
+
 
     <!-- 9. Video Gallery (Slider) -->
-    <section class="relative bg-white flex h-50 py-12">
-        <div class="container mx-auto px-4">
-            <div class="flex items-start space-x-4">
-                <!-- Text Section -->
-                <div class="w-1/4">
-                    <p class="text-gray-400">Umfassendes Netzwerk für
-                        Klinische Ausbildung</p>
-                    <h1 style="color: #1b3a54;" class="text-2xl font-bold">Unsere
-                        Lehrkrankenhäusern
-                        und medizinischen
-                        Einrichtungen</h1>
-                    <p style="color: #1b3a54;" class="mt-2 mb-10 text-justify">Die Hamburger Niederlassung der Univer-
-                        sität bietet ein umfangreiches Netzwerk an
-                        Lehrkrankenhäusern und medizinischen Ein-
-                        richtungen für die klinisch-praktische Ausbil-
-                        dung. Studierende nehmen an Simulationen
-                        realer Untersuchungssituationen teil und ha-
-                        ben die Möglichkeit, im OP-Saal unter Aufsicht
-                        praktische Fertigkeiten anzuwenden.</p>
-                    <button class="text-white bg-gray-500 rounded-full px-6 py-2">Unsere Lehrkrankenhäuser</button>
-                </div>
+    <div class="flex flex-col md:flex-row p-6 md:p-12 mt-10">
+        <!-- Left Fixed Text Section -->
+        <div class="flex-1 md:mr-8 mb-6 md:mb-0">
+            <p class="text-gray-400 font-bold mb-4">Umfassendes Netzwerk für
+                Klinische Ausbildung</p>
+            <h2 style="color: #1b3a54;" class="text-2xl font-bold mb-4">Unsere
+                Lehrkrankenhäusern
+                und medizinischen
+                Einrichtungen</h2>
+            <p style="color: #1b3a54;" class="">
+                Die Hamburger Niederlassung der Universität bietet ein umfangreiches Netzwerk an
+                Lehrkrankenhäusern und medizinischen Einrichtungen für die klinisch-praktische Ausbildung. Studierende
+                nehmen an Simulationen
+                realer Untersuchungssituationen teil und haben die Möglichkeit, im OP-Saal unter Aufsicht
+                praktische Fertigkeiten anzuwenden.
+            </p>
 
-                <!-- Video Slider Section -->
-                <div class="w-3/4 mx-5 py-20">
-                    <!-- Video Slider -->
-                    <div id="slider" class="slider flex overflow-x-auto space-x-4 scroll-smooth mb-4">
-                        <div class="container mx-auto px-4">
-                            <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-
-                                <!-- Card 1 -->
-                                <div
-                                    class="max-w-md w-full bg-white overflow-hidden relative flex flex-col md:flex-row">
-                                    <!-- Video Section -->
-                                    <div class="md:w-1/2 relative">
-                                        <video class="w-full h-full object-cover" muted>
-                                            <source src="your-video-source1.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                        <!-- Play Icon -->
-                                        <div class="absolute inset-0 flex items-center justify-center">
-                                            <div class="bg-white bg-opacity-75 p-2 rounded-full">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500"
-                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M14.752 11.168l-6.213-3.577A1 1 0 007 8.577v6.846a1 1 0 001.539.844l6.213-3.577a1 1 0 000-1.684z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Text Section -->
-                                    <div style="background-color: rgba(3, 74, 128, 0.8);"
-                                        class="md:w-1/2 flex items-center p-4">
-                                        <div>
-                                            <small class="text-red-700 mb-10">Karussell Video
-                                                LKH Damme, LKH Speyer,
-                                                LKH Brilon...</small>
-                                            <p class="text-white text-opacity-90">UMCH Teaching Hospital
-                                                St. Elisabeth, Damme</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 2 -->
-                                <div
-                                    class="max-w-md w-full bg-white overflow-hidden relative flex flex-col md:flex-row">
-                                    <!-- Video Section -->
-                                    <div class="md:w-1/2 relative">
-                                        <video class="w-full h-full object-cover" muted>
-                                            <source src="your-video-source2.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                        <!-- Play Icon -->
-                                        <div class="absolute inset-0 flex items-center justify-center">
-                                            <div class="bg-white bg-opacity-75 p-2 rounded-full">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500"
-                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M14.752 11.168l-6.213-3.577A1 1 0 007 8.577v6.846a1 1 0 001.539.844l6.213-3.577a1 1 0 000-1.684z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Text Section -->
-                                    <div style="background-color: rgba(3, 74, 128, 0.8);"
-                                        class="md:w-1/2 flex items-center p-4">
-                                        <div>
-                                            <h2 class="text-white text-xl font-bold mb-2">Card Title 2</h2>
-                                            <p class="text-white text-opacity-90">This is the description for the second
-                                                video card. Customize the text to match your content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 3 -->
-                                <div
-                                    class="max-w-md w-full bg-white overflow-hidden relative flex flex-col md:flex-row">
-                                    <!-- Video Section -->
-                                    <div class="md:w-1/2 relative">
-                                        <video class="w-full h-full object-cover" muted>
-                                            <source src="your-video-source3.mp4" type="video/mp4">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                        <!-- Play Icon -->
-                                        <div class="absolute inset-0 flex items-center justify-center">
-                                            <div class="bg-white bg-opacity-75 p-2 rounded-full">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500"
-                                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-width="2"
-                                                        d="M14.752 11.168l-6.213-3.577A1 1 0 007 8.577v6.846a1 1 0 001.539.844l6.213-3.577a1 1 0 000-1.684z" />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Text Section -->
-                                    <div style="background-color: rgba(3, 74, 128, 0.8);"
-                                        class="md:w-1/2 flex items-center p-4">
-                                        <div>
-                                            <h2 class="text-white text-xl font-bold mb-2">Card Title 3</h2>
-                                            <p class="text-white text-opacity-90">This is the description for the third
-                                                video card. You can modify the text to suit your needs.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Navigation and Pagination -->
-                    <div class="flex justify-center items-center space-x-4 mt-14">
-                        <!-- Left Button -->
-                        <button id="prev" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                            </svg>
-                        </button>
-
-                        <!-- Pagination Dots -->
-                        <div class="flex space-x-1 px-10 py-4 rounded-full bg-gray-400">
-                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
-                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
-                            <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
-                        </div>
-
-                        <!-- Right Button -->
-                        <button id="next" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                            </svg>
-
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <button class="bg-gray-500 text-white rounded-full py-2 px-10 mt-10">Unsere Lehrkrankenhäuser</button>
         </div>
 
-    </section>
+        <!-- Right Video Slider Section -->
+        <div class="flex-1">
+            <div class="relative w-full">
+                <!-- Video Slider (Scrollable) -->
+                <div class="flex space-x-4 overflow-x-auto pb-4">
+
+                    <!-- Video Card 1 -->
+                    <div class="relative w-full h-64 overflow-hidden">
+                        <video class="w-full h-full object-cover" src="your-video-source.mp4" muted
+                            poster="team.png"></video>
+                        <!-- Play Button Overlay -->
+                        <div class="absolute inset-0 flex items-center rounded-full justify-center ">
+                            <div class="bg-opacity-40 bg-blue-900 rounded-full" style="padding: 7px 10px;">
+                                <button class="text-white text-4xl"><i class="ri-play-large-fill"></i></button>
+                            </div>
+                        </div>
+                        <!-- Blue Background with Text -->
+                        <div
+                            class="absolute inset-y-0 right-0 w-1/3 bg-blue-900 bg-opacity-50 flex flex-col justify-between text-white py-2 px-6">
+                            <h3 class="text-sm mt-10 text-pink-600 font-semibold">Karussell Video
+                                LKH Damme, LKH Speyer,
+                                LKH Brilon...</h3>
+                            <p class="text-md mb-10 font-bold">UMCH Teaching Hospital
+                                St. Elisabeth, Damme</p>
+                        </div>
+                    </div>
+
+                    <!-- video 2 -->
+                    <div class="relative w-full h-64 overflow-hidden">
+                        <video class="w-full h-full object-cover" src="your-video-source.mp4" muted
+                            poster="team.png"></video>
+                        <!-- Play Button Overlay -->
+                        <div class="absolute inset-0 flex items-center rounded-full justify-center ">
+                            <div class="bg-opacity-40 bg-blue-900 rounded-full" style="padding: 7px 10px;">
+                                <button class="text-white text-4xl"><i class="ri-play-large-fill"></i></button>
+                            </div>
+                        </div>
+                        <!-- Blue Background with Text -->
+                        <div
+                            class="absolute inset-y-0 right-0 w-1/3 bg-blue-900 bg-opacity-50 flex flex-col justify-between text-white py-2 px-6">
+                            <h3 class="text-sm mt-10 text-pink-600 font-semibold">Karussell Video
+                                LKH Damme, LKH Speyer,
+                                LKH Brilon...</h3>
+                            <p class="text-md mb-10 font-bold">UMCH Teaching Hospital
+                                St. Elisabeth, Damme</p>
+                        </div>
+                    </div>
+
+                    <!-- video 3 -->
+                    <div class="relative w-full h-64 overflow-hidden">
+                        <video class="w-full h-full object-cover" src="your-video-source.mp4" muted
+                            poster="team.png"></video>
+                        <!-- Play Button Overlay -->
+                        <div class="absolute inset-0 flex items-center rounded-full justify-center ">
+                            <div class="bg-opacity-40 bg-blue-900 rounded-full" style="padding: 7px 10px;">
+                                <button class="text-white text-4xl"><i class="ri-play-large-fill"></i></button>
+                            </div>
+                        </div>
+                        <!-- Blue Background with Text -->
+                        <div
+                            class="absolute inset-y-0 right-0 w-1/3 bg-blue-900 bg-opacity-50 flex flex-col justify-between text-white py-2 px-6">
+                            <h3 class="text-sm mt-10 text-pink-600 font-semibold">Karussell Video
+                                LKH Damme, LKH Speyer,
+                                LKH Brilon...</h3>
+                            <p class="text-md mb-10 font-bold">UMCH Teaching Hospital
+                                St. Elisabeth, Damme</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Pagination and Buttons -->
+            <div class="flex justify-center items-center space-x-4">
+                <!-- Left Button -->
+                <button id="prev" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+
+                <!-- Pagination Dots -->
+                <div class="flex space-x-1 px-10 py-4 rounded-full bg-gray-400">
+                    <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
+                    <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
+                    <span class="dot w-2 h-2 bg-gray-200 text-white rounded-full"></span>
+                </div>
+
+                <!-- Right Button -->
+                <button id="next" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+    </div>
+
 
     <!-- 10. Site Statistics -->
     <section class="bg-gray-800 text-white py-4 bg-gradient-to-l from-[#006890] to-[#008ec1]">
@@ -949,9 +827,9 @@
     </section>
 
     <!-- 11. Blog Section -->
-    <section class="relative flex bg-white min-h-screen">
+    <section class="relative flex bg-white">
         <!-- Left Image (fixed) -->
-        <div class="hidden lg:block bg-cover bg-center bg-fixed w-1/5">
+        <div class="hidden lg:block bg-cover bg-center bg-fixed" style="width: 200px;height: 500px;">
             <img src="assets/bilder/Blue Color gradient2.png" alt="Blue">
         </div>
 
@@ -1043,7 +921,7 @@
                     </div>
 
                     <!-- Slider Controls -->
-                    <div class="flex justify-center items-center space-x-4 my-4">
+                    <div class="flex justify-center items-center space-x-4">
                         <!-- Left Button -->
                         <button id="prev" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
 
@@ -1077,10 +955,10 @@
 
     <!-- 12. Medical Tests -->
     <!-- Main Section -->
-    <section class="container mx-auto px-4 py-12 text-center">
+    <section class="bg-gray-100 py-12 text-center py-14 mx-0">
         <p class="font-bold text-gray-400">Enge Verzahnung von Forschung und Lehre</p>
         <!-- Centered Text -->
-        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+        <h1 style="color: #1b3a54;" class="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
             Forschung am UMCH
         </h1>
 
@@ -1115,14 +993,14 @@
 
 
     <!-- 13. Image Slider -->
-    <section class="relative flex bg-white min-h-screen">
+    <section class="relative flex bg-white mb-4">
         <!-- Left Image (fixed) -->
-        <div class="hidden lg:block bg-cover bg-center bg-fixed w-1/5">
+        <div class="hidden lg:block bg-cover bg-center bg-fixed" style="width: 200px;height: 600px;">
             <img src="assets/bilder/Blue Color gradient2.png" alt="Blue">
         </div>
 
         <!-- Main Content Area -->
-        <div class="flex-1 p-8 lg:ml-1/3">
+        <div class="flex-1 px-8 lg:ml-1/3 mt-10">
             <div class="text-center">
                 <p class="text-gray-500">Netzwerk erweitern und Fachwissen vertiefen</p>
                 <h1 style="color: #1b3a54;" class="text-2xl font-bold text-center">Praxisorientierte Workshops und
@@ -1130,11 +1008,11 @@
             </div>
 
 
-            <div class="flex-1 p-8">
+            <div class="flex-1 px-8">
                 <div class="relative">
                     <!-- Slider Wrapper -->
-                    <div class="slider-wrapper flex overflow-x-scroll space-x-4 my-6 py-10">
-                        <div class="mx-8 px-8">
+                    <div class="slider-wrapper flex overflow-x-scroll my-2 py-4">
+                        <div class="" style="margin-right: 50px;width: 200px;">
                             <p class="text-gray-400 mb-5 font-bold">Profitieren Sie von einem breiten
                                 Netzwerk an Experten, die am Campus
                                 praktische Seminare abhalten. </p>
@@ -1155,42 +1033,43 @@
                         </div>
 
                         <!-- Card 1 -->
-                        <div
-                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
-                            <img src="assets/img/10.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
-                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
+                        <div class="flex-none justify-center items-center mx-auto w-72 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]"
+                            style="margin: 0 10px;">
+                            <img src="assets/img/10.png" alt="Card Image 1" class="w-full h-80 object-cover mb-4">
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold">
                                 Anatomie Bodypainting</h2>
-                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
+                            <p class="text-white px-8 py-2 text-justify mt-2 mb-6">Prof. Lorand Denes,
                                 UMFST UMCH Teacher</p>
-                            <div class="flex items-center justify-center mb-2">
+                            <div class="flex items-center justify-center mb-10">
                                 <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
                                 </button>
                             </div>
                         </div>
 
                         <!-- Card 2 -->
-                        <div
-                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
-                            <img src="assets/img/11.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
-                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
+                        <div class="flex-none justify-center items-center mx-auto w-72 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]"
+                            style="margin: 0 10px;">
+                            <img src="assets/img/11.png" alt="Card Image 1" class="w-full h-80 object-cover mb-4">
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold">
                                 Anatomie Bodypainting</h2>
-                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
+                            <p class="text-white px-8 py-2 text-justify mt-2 mb-6">Prof. Lorand Denes,
                                 UMFST UMCH Teacher</p>
-                            <div class="flex items-center justify-center mb-2">
+                            <div class="flex items-center justify-center mb-10">
                                 <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
                                 </button>
                             </div>
                         </div>
 
                         <!-- Card 3 -->
-                        <div
-                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
-                            <img src="assets/img/10.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
-                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
+                        <div class="flex-none justify-center items-center mx-auto w-72 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]"
+                            style="margin: 0 10px;">
+                            <img src="https://img.freepik.com/free-photo/thoughtful-young-doctor-with-clipboard_23-2147896196.jpg?ga=GA1.1.1061246980.1720825066&semt=ais_hybrid"
+                                alt="Card Image 1" class="w-full h-80 object-cover mb-4">
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold">
                                 Anatomie Bodypainting</h2>
-                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
+                            <p class="text-white px-8 py-2 text-justify mt-2 mb-6">Prof. Lorand Denes,
                                 UMFST UMCH Teacher</p>
-                            <div class="flex items-center justify-center mb-2">
+                            <div class="flex items-center justify-center mb-10">
                                 <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
                                 </button>
                             </div>
@@ -1233,7 +1112,7 @@
         </div>
     </section>
 
-    <div class="border-b-2 px-10 border-blue-500"></div>
+    <div class="border-b-2 mx-20 px-10 border-blue-900"></div>
     <!-- 14. Photos of Doctors -->
     <section class="relative flex bg-white min-h-screen">
         <!-- Main Content Area -->
@@ -1243,67 +1122,67 @@
                     <!-- Slider Wrapper -->
                     <div class="slider-wrapper flex overflow-x-scroll space-x-4 my-6 py-10">
                         <div class="mx-8 px-8">
-                            <p class="text-gray-400 mb-5 font-bold">Profitieren Sie von einem breiten
-                                Netzwerk an Experten, die am Campus
-                                praktische Seminare abhalten. </p>
+                            <p class="text-gray-400 mb-5 font-bold">Entdecken Sie ein breites
+                                Themenspektrum über die Grenzen der
+                                Medizin hinaus.</p>
 
-                            <h1 style="color: #1b3a54;" class="mb-5 text-2xl font-bold">Extracurriculare
-                                Workshops </h1>
+                            <h1 style="color: #1b3a54;" class="mb-5 text-2xl font-bold">Reach Higher
+                                Vortragsreihe</h1>
                             <p style="color: #1b3a54;text-align: justify;">
-                                Diese Workshops bieten Ihnen die Möglichkeit,
-                                zusätzliche Fähigkeiten zu erwerben und
-                                Ihr Wissen in verschiedenen Fachgebieten
-                                zu vertiefen. Ob es um klinische Techniken,
-                                wissenschaftliche Forschung oder persönliche
-                                Entwicklung geht, unsere extracurriculare
-                                Programme ergänzen Ihr Studium optimal
-                                und bereiten Sie umfassend auf Ihre
-                                zukünftige Karriere vor
+                                Erweitern Sie Ihren Horizont und lassen Sie
+                                sich für Ihre eigene berufliche Laufbahn
+                                inspirieren. Die Reach Higher Vortragsreihe ist
+                                eine wertvolle Ergänzung zu Ihrem Studium
+                                und bietet Ihnen die Möglichkeit, über den
+                                Tellerrand zu schauen und neue Perspektiven
+                                zu gewinnen.
                             </p>
                         </div>
 
                         <!-- Card 1 -->
                         <div
-                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
+                            class="flex flex-col justify-between items-center mx-auto w-full h-100 bg-gradient-to-b from-[#1b3a54] to-[#1b3a54]">
                             <img src="assets/img/12.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
-                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
-                                Anatomie Bodypainting</h2>
-                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
-                                UMFST UMCH Teacher</p>
-                            <div class="flex items-center justify-center mb-2">
-                                <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4 px-6">
+                                Plastic Surgery in the
+                                Interplay between Form
+                                and Function</h2>
+                            <p class="text-white px-8 text-justify">Prof. Meyer-Marcotty
+                                Klinikum Lüdenscheid</p>
+                            <div class="flex items-center justify-center my-6 px-6">
+                                <button style="color: #1b3a54;" class="bg-white px-4 py-2 rounded-full">Mehr erfahren +
                                 </button>
                             </div>
                         </div>
 
                         <!-- Card 2 -->
                         <div
-                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
+                            class="flex flex-col justify-between items-center mx-auto w-full h-100 bg-gradient-to-b from-[#1b3a54] to-[#1b3a54]">
                             <img src="assets/img/13.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
-                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
-                                Anatomie Bodypainting</h2>
-                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
-                                UMFST UMCH Teacher</p>
-                            <div class="flex items-center justify-center mb-2">
-                                <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4 px-6">
+                                Fortschritte in der
+                                Intensivmedizin</h2>
+                            <p class="text-white px-8 text-justify">Dr. Mehdi Afscharian
+                                Chefarzt LKH St. Vincenz</p>
+                            <div class="flex items-center justify-center my-6 px-6">
+                                <button style="color: #1b3a54;" class="bg-white px-4 py-2 rounded-full">Mehr erfahren +
                                 </button>
                             </div>
                         </div>
 
                         <!-- Card 3 -->
                         <div
-                            class="flex-none justify-center items-center mx-auto w-64 h-100 bg-gradient-to-b from-[#1b3a54] to-[#008ec1]">
-                            <img src="assets/img/10.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
-                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4">
+                            class="flex flex-col justify-between items-center mx-auto w-full h-100 bg-gradient-to-b from-[#1b3a54] to-[#1b3a54]">
+                            <img src="assets/img/12.png" alt="Card Image 1" class="w-full h-auto object-cover mb-4">
+                            <h2 class="text-white text-xl px-8 py-2 text-justify font-bold mb-4 px-6">
                                 Anatomie Bodypainting</h2>
-                            <p class="text-white px-8 py-2 text-justify my-6">Prof. Lorand Denes,
+                            <p class="text-white px-8 text-justify">Prof. Lorand Denes,
                                 UMFST UMCH Teacher</p>
-                            <div class="flex items-center justify-center mb-2">
-                                <button style="color: #1b3a54;" class="bg-white py-2 px-10 rounded-full">Mehr +
+                            <div class="flex items-center justify-center my-6 px-6">
+                                <button style="color: #1b3a54;" class="bg-white px-4 py-2 rounded-full">Mehr erfahren +
                                 </button>
                             </div>
                         </div>
-
 
 
                     </div>
@@ -1341,7 +1220,6 @@
         </div>
     </section>
 
-    <div class="border-b-2 px-10 border-blue-500"></div>
     <!-- 15. Another Video Gallery -->
     <section class="relative flex bg-gray-100 h-50 py-12">
         <div class="container mx-auto px-4">
@@ -1368,44 +1246,44 @@
                 </div>
 
                 <!-- Video Slider Section -->
-                <div class="w-3/4 mx-5 py-20">
+                <div class="w-3/4 mx-5">
                     <!-- Video Slider -->
-                    <div id="slider" class="slider flex overflow-x-auto space-x-4 scroll-smooth mb-4">
+                    <div id="slider" class="slider flex overflow-x-auto space-x-1 scroll-smooth mb-10">
                         <!-- Card 1 -->
-                        <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden">
+                        <div style="height: 600px;" class="card w-80 mx-8 bg-gray-800 overflow-hidden">
                             <video class="w-full h-full object-cover" poster="assets/img/14.png">
                                 <source src="video2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
 
-                            <div style="height: 35%;" class="overlay-text">
-                                <h1>Campustalk</h1>
-                                <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
-                                <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
-                                    ein Studium am UMCH
-                                    entschieden hat</p>
+                            <div class="overlay-text px-8 py-10">
+                                <p style="font-size: 15px;" class="font-bold">Kim, UMCH Studierender
+                                    aus Pakistan
+                                    erzählt über seine
+                                    Erfahrungen am Campus</p>
                             </div>
                         </div>
-                          <!-- Card 2 -->
-                          <div class="card w-64 h-100 bg-gray-800 rounded overflow-hidden">
+
+                        <!-- Card 2 -->
+                        <div style="height: 600px;" class="card w-80 mx-8 bg-gray-800 overflow-hidden">
                             <video class="w-full h-full object-cover" poster="assets/img/15.png">
                                 <source src="video2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
 
-                            <div style="height: 35%;" class="overlay-text">
-                                <h1>Campustalk</h1>
-                                <p style="font-size: 14px;" class="my-3">Julia Blömer, UMCH Studierende</p>
-                                <p style="font-size: 12px;" class="font-bold">Erfahre, warum sie sich für
-                                    ein Studium am UMCH
-                                    entschieden hat</p>
+                            <div class="overlay-text px-8 py-10">
+                                <p style="font-size: 15px;" class="font-bold">Maria, UMCH Studierende
+                                    aus Südafrika
+                                    erzählt über seine
+                                    Erfahrungen am Campus</p>
                             </div>
                         </div>
+
 
                     </div>
 
                     <!-- Navigation and Pagination -->
-                    <div class="flex justify-center items-center space-x-4">
+                    <div class="flex justify-center items-center space-x-4 mb-8">
                         <!-- Left Button -->
                         <button id="prev" class="p-2 bg-gray-400 text-white rounded-full hover:bg-gray-500">
 
@@ -1428,7 +1306,6 @@
                                 stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                             </svg>
-
                         </button>
                     </div>
                 </div>
@@ -1439,9 +1316,9 @@
 
     <!-- 16. -->
     <section class="bg-white py-12">
-        <div class="text-center mx-auto px-4 py-8">
+        <div class="text-center mx-auto px-4 py-4">
             <p class="font-bold text-gray-400">Gemeinschaft, Aktivitäten und einzigartige Erfahrunge</p>
-            <h1 style="color: #1b3a54;" class="mt-4 text-2xl font-bold">Erlebe das vielfältige Studentenleben am Campus
+            <h1 style="color: #1b3a54;" class="mt-2 text-2xl font-bold">Erlebe das vielfältige Studentenleben am Campus
             </h1>
         </div>
         <div class="container mx-auto px-4 py-8">
@@ -1451,18 +1328,16 @@
                     <img class="w-full h-48 object-cover" src="assets/img/1.png" alt="Image 1">
                     <div class="py-4 px-6 text-white bg-gradient-to-b from-[#005172] to-[#0094c8]">
                         <h1 class="mt-2">icon</h1>
-                        <span class="mt-2 text-left font-bold">Freundschaften, Projekte, Leidenschaften teilen!</span>
-                        <h2 class="text-2xl text-white font-semibold mt-2 text-left">Die UMCH-Student Clubs</h2>
-                        <p class="mt-2 text-white text-left">In unseren Student Clubs bereichern
-                            Sie Ihre Universitätserfahrung, schließen Freundschaften und setzen spannende Projekte um.
-                            wSport, Musik,
-                            Kultur und gemeinnützige Aktionen –
-                            hier schaffen Sie gemeinsam Großes.</p>
+                        <span class="mt-2 text-left font-bold">Gemeinsam Mittagessen?</span>
+                        <h2 class="text-2xl text-white font-semibold mt-2 text-left">Genieße einen leckeren Lunch</h2>
+                        <p class="mt-2 text-white text-left">In der Campus-eigenen Mensa, der
+                            UMCH Cafeteria, werden den Studierenden zur Mittagszeit täglich wechselnde Mahlzeiten
+                            geboten – darunter stets auch vegetarische oder
+                            vegane Gerichte. </p>
                         <button style="color: #0094c8;" class="bg-white rounded-full py-2 px-6 mt-8 mb-6">Link zu
                             Student Life</button>
                     </div>
                 </div>
-
                 <!-- Card 2 -->
                 <div class="bg-white overflow-hidden text-center">
                     <img class="w-full h-48 object-cover" src="assets/img/2.png" alt="Image 1">
@@ -1502,14 +1377,16 @@
     </section>
 
     <!-- 18. Queuing -->
-    <section class="bg-gray-100 p-12">
+    <section class="bg-gray-100 py-8 px-20">
         <div class="container mx-auto px-4 flex justify-between">
             <p style="color: #1b3a54;" class="text-lg font-bold">Vereinbaren Sie kostenlos und unverbindlich einen
                 Online-Beratungstermin inklusive virtueller Campustour.</p>
-            <button style="background-color: #ffea43;color: #1b3a54;" class="text-white p-2 rounded-full">
-                <div class="flex px-10 py-2">
+            <button
+                style="background-color: #ffea43;color: #1b3a54;margin-right: 20px;margin-left: 2px;padding:5px 10px;"
+                class="text-white py-2 rounded-full">
+                <div class="flex items-center px-2 py-2">
                     <?xml version="1.0" encoding="UTF-8"?>
-                    <svg style="width: 30px;height: 30px;" id="Ebene_2" data-name="Ebene 2"
+                    <svg style="width: 30px;height: 30px;margin: 0 5px;" id="Ebene_2" data-name="Ebene 2"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 23.5 15.2">
                         <defs>
@@ -1556,12 +1433,12 @@
 
 
     <!-- 19. Footer -->
-    <footer class="bg-gray-800 text-white py-8 px-20" style="background-color: #004d6e;">
+    <footer class="bg-gray-800 text-white px-12 py-12" style="background-color: #004d6e;">
         <!-- First Row -->
-        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div class="container mx-auto grid md:grid-cols-4 gap-8 px-4 py-8 md:py-6">
             <!-- First Column: Image with text below it -->
             <div class="text-center">
-                <img width="300px" height="150px" src="assets/logos/umch_blanco-opt.png" alt="Image 1"
+                <img width="300px" height="150px" src="assets/logos/umch_blanco-opt.png" alt="umch_blanco"
                     class="mx-auto mb-10">
                 <p class="mt-2 text-left">Universitätsmedizin Neumarkt am Mieresch Campus Hamburg</p>
             </div>
@@ -1581,7 +1458,8 @@
             </div>
             <!-- Fourth Column: Image with text below it -->
             <div class="text-center">
-                <img width="65px" height="65px" src="assets/logos/Medaille.png" alt="Image 3" class="mx-auto w-16 h-16">
+                <img width="65px" height="65px" src="assets/logos/Medaille.png" alt="Medaille"
+                    class="mx-auto w-16 h-16">
                 <div class="text-left">
                     <p class="mt-2">George Emil Palade</p>
                     <p>Nobelpreisgewinner </p>
@@ -1592,19 +1470,17 @@
         </div>
 
         <!-- Divider with text -->
-        <div class="flex items-center">
+        <div class="flex items-center mx-auto px-12 w-100">
             <span class="mr-4">Eine Niederlassung der</span>
-            <div class="flex-grow border-t border-gray-300"></div>
+            <div class="border-t border-gray-400 border-2 w-96"></div>
         </div>
 
-
-
         <!-- Second Row -->
-        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8 mt-8">
+        <div class="container mx-auto grid md:grid-cols-4 gap-8 px-4 py-8 md:py-6">
             <!-- First Column: Image with text below it -->
             <div class="text-center">
-                <img src="assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="Image 4"
-                    class="mx-auto w-16 h-16">
+                <img src="assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="umfst-logo-neu_whiteENG-01-1-7"
+                    class="mx-auto w-64 h-20">
                 <p class="mt-2">Universität für Medizin, Pharmazie,</p>
                 <p>Naturwissenschaften und Technik</p>
                 <p>Neumarkt am Mieresch</p>
@@ -1617,175 +1493,77 @@
                 <p>Address: 123 Health St, Medical City</p>
             </div>
             <!-- Third Column: Social Media Logos -->
-            <div class="flex justify-center space-x-4 mt-4 md:mt-0">
-                <a href="#">
-                    <i class="fas fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fas fa-itunes"></i>
-                </a>
-                <a href="#">
-                    <i class="fas fa-youtube"></i>
-                </a>
-                <a href="#">
-                    <i class="fas fa-youtube"></i>
-                </a>
-            </div>
+
             <!-- Fourth Column: Image -->
-            <div class="text-center">
-                <img width="100px" height="50px" src="assets/bilder/Samy_Hoddie_outline.png" alt="Image 5"
-                    class="mx-auto w-16 h-16">
+            <div class="flex justify-center items-center mx-10">
+                <div class="flex justify-center space-x-4 mt-20 md:mt-0 mx-10">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+                <!-- First Image -->
+                <img src="assets/bilder/Samy_Hoddie_outline.png" alt="Image 1" class="w-1/3 md:w-1/4 object-cover">
+
+                <!-- Second Image with Larger White Border, Stuck to the First Image and More Pushed Down -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQYAAACvCAMAAAAoj4CcAAAAyVBMVEUAM5n/zAAAMZr/zgD/0AAALpsAL5oAKJ3/1gAAK5z/0wAAJZ4AHKD/2AAAKZz/2gAAIZ8AGKJkZX/btzcAEqKylVgAAKc7PJZiXoP/4AC1nVfWsDsACqP70A8gOZc9PpSAc3UnPZXvwyD1xhjpvyl9bnluan/huS7LrkWfiGeYf25gW4aPd3OnlV8vNZioj19KU4iEeHG+nVTBo01JSo8tQZNpYoGWh2lDRJGQgm5dVog4R44+TIy7o1PNpkfUrEHhwjhYUYvvzCMkFKgEAAAKMklEQVR4nO2dC1uqSheAgRmGmwIGmpcgBBTIDBWl8tI++f9/1Deg7Y5F58sKHPee9+mx2bumNSzmstaaG8NQKBQKhUKhUCgUCoVCoVAofzAcd+oSkABn21QPDKPf3OinLsPpQUy3iz/+dtSRYYzUU5fi5Oi3EN7+za0CZUjMWBTHjJT/49QlOgXc4vry8vJuZEBojO5w8nrxx48YBQ/Ixz2j1+sFLABsgBNGL+Y/lfFsQZNFQYVXxltRhhCwLIBQFrdjpSDnYvLnNJVac1rwiFwtNQBkcyAw0lrBm1emzVr55auIK+/pquj/lcXMBZkWgDtbFCgK53zyCnOeI/yi4wmFdVu4S+RMDXJyJxT9HAleZ1HQY5wljahuDQtfNj/vwayLhL154cMqQ6seNcotXflwqqBiWj6ESStLCdJh+1dTCKDr4o/00JDkpF3OBEJ/l1M92zEDLdK03W6PUhE3/iVOtdPRgTfJMfd1aDhOD9bvD4ZGzh5lOdtL3HWI6SjLmRYNNmcBZ097gWEYAR4OgJElwouDX+AfDHm2VJTlTDYeDlvFRZjlNHAHCvM/0ZuerzvOL6auCGE+KGamQW9oH7xSPt0+LnDfKFw/btMDNSB72MuMil1OKLrTc+4peWn5JIO9aWA15+qbin0x4KTsu8QND+sJg9R509obFUB+WkpnrAXcLvCL9nbP4jv2O3+6z+/1gqT+25+ptuPvNOg9Xgtn2yL2SKabv1TwZL7v47jC5B5kPuVqgK4plVnCSpBWHrYL8JeBjnyjHDKwUYG/vNX5q6EWWazoARm4xRbUxyhDF2fzZNaKzt+vaAWw80t/8DV2dqR3cDVjNf9B/9WBQaucslWHtNp2pibHq+OOwR9lACHe6IxVHtWmne3Ztwo99lZZpBHpQ9c5qlUojjvUM8XpCy8+92Cl8Kjsh0n92in0Ij/M6VzvH15VHo/KSSLK7/EBHfksr745d2TnSiGFSvxA4p1N9FBBESsR8i3MsAJTpxaa5Qv5DpzSKX+MV1cdhWxXS3c6cemxw0bcccg2JK56slt6hTVduUdo2J5DHIbnIRDXQpY81p/8vBBhLQLI82UJ+RZ9O/tUHMjCXauw38VRfkpII8ZCdoZ5GUK+A7+ON91utxkAFrhjnNqMRz8+qKHROBMydrGQoJkJiddkxeZQ3zHqoizDPHQoy3V/+vNjO3qY+nX8x7OYFJRlsW44fcIMCCS8hlBZCJPl2+jrjwhRlwn8LcRqzounBE+KcOns5mVZ6D0+lBRDFR4evZ0egOtcEul38mq6zfQAvKlUmgklSVMvF7JNVbL6hd/og10JrTJnXxuRtdP1gFQL6uoJsLAus8Ao0YIyDcDKdciC4iUTpwfZPtCCu6QD3UlpCx3ViQu18C7QgG+T1z9mKM62EwuqMNVKjKjXIkubYiFxZ3tcaLMyWr9gW0HYyVx5/5RWYa/+8dbYvURKG/4iMmyP1rPr3fsR+HhYUqtQh/E+pKlcz9ZEtgpbfxnBUImduP7y7LxulyeFQqFQKBQKhVINJwmVkxafZ7iTWLbELSAWnGXl65Ok5XHrZ8oH9cNp5UUSpiFhAXph6DerLhLqN/0hWdWhFsnBc8WtQnoOZLIWjqJ+IstlhVo+Qh3KckJIq0C1BqbVDqAcC2aWriBCqGRyTCGWYdBuZenaiZXBLWazZrMZ/2IBdLNUM7kvXQ/KY5JJmrkQsL/iLDU79b5mfuJqEGBYNvuEnVkFsyj6rPNvmZo7OfkElnTX1fb7Z1hWFi8q6bNqF6L8IhNo3TsCllTzuvMyy6wFfEVzB4pkaC+z545+8rqQwTWejVwPctyorEB8I87rAzSeG4RY1Ooy2wbDsuJ9dWcXcdy9iBsEVsOSlBNRlFsZAAv3VcFlZQMXugxgLlS+JWQODxu1IvCaoQW05+oaxbMGrLDpAbFyI/4D1GUg91JTjV0tqq42RJobq2bakwNCWoV6C7sPOoPMgeHfVdQ5cHe+MWggRn/owlsi1MD1HyMpL0ljHq4qqg5oHs7zJTWqFD32SRgquP5K2T+8YK+rKtHa3rvYSFkRoQaGe60B1R3d9C9JxK0YplAoFAqFQqEcTSXePyEhho/Rq5hHqkWkbiJ4odUpf+MPEjpELpd+RRh1pqW/KX3aGZE1hfsWcyaWfx5NKxBnZO9VvwKwzpcckOT5OgSEbq1hOJ7nkdKWWfhYQzhdShAgF1J7hKzcVkoT8g3Q6mJ4cXExSiALjAlODS/WPy9lnQuZGICFySgXUlXQ75Pw642lafV6NpME8XdNDH9+LZS0DMXsb2dTZDL+rlkbwjYnM3zNMeDLlC6A/u9zjn4SVbnx/yXEcGqEaQHTeN54uyICEKblTCxyjTQEeyHe5pnIw3YVPt7tFAUzuzTbQbdnYLfnNa5q9vxYlIm72zDrlLkr19lt/XUnhGqBMZu4C5fxWFHmQTxmuBfSJNSC4oQAiG4UiNAv7/xbfuFDMYhcEQaEHqwqpFstHJjtjWiV51foU0vcpOYg1LYpmX6FOQPjtc4oi8gqr1WYoRUtFEZfjwGZfgWykxsmM5l4frApa2kaP0kGuc8iMTcJkXvVuf5kP5uJpHVZRi5arfdnkCJuQsYU7jv4gtR5CqGUyTde3B/0zvn1l7cg2aT5kN9AH3/15A3FOftDhV9psckXg2ZXCUt4EPrz8EzH+qKpY1qdP6Z3qEXiB1f4/D+UoSWStY/oS+QX+qGWD0FylSc/bfBw+a9fJQD6LXTu9wJe57f7LTQWuNJldrvfp8937Gc5LyUXsNoivxfwusxylgpadF0vI9sGkyfc+8/to+Xs+7c5u4QFoY9AEiJ/d7lffr0fNAb6+2fhnwsWnCN9YMDXnLIfCQTsoPkqnJmGL6Fk4G3mRcE5JY6Lus/G/CXCi/UQpkQ61Z9Ht5u7pwF+JBXFSfhFkhQGqwQp2l3hA7xmeSHeqpBa+4dJWoWNW0l9Py0cTVEr2SuwdcYNYo+02AIWwuwKn+JLEG9k+ab4+sPsCh+cE2wX56+GWmQBsYd7yndX+AgKRre7sty19Sz9RhnK0MV9Y08Ef8IVPmYPipvnYSi+jaijgTPA3PgQ+jdZyhkcVhezCcRwuNyIcu/MO0jcA662VtTX9XUTGofXSqBhb+v7vpttrHVxYtsbHv6cMWBzret25G1X5+5X1OJwIOCHUJmb8I23LaVJHb5sMYb1JD3sARQnvMHZGF4YhPG5twrBWe4uUeD59sWbnk5YRex+j7HMRg9vugbpor1bN8MpE9IOLzke+6U+c+hdCIpnBrv9vNi+ZN6NBvZvR4w//5Mh/9OHkC43uyuDN5f/OSaSGYn/MaRnPzcNoF/1iShEoQ5FIAeBDMSqT0QhCWQ36/LMtmdyvUnkTFw1SHPXutV5pN9a7vzvbRX8cDvPfUd9vh2eu4X0ZTi7/eJ7q8qIuPPdKoOTfncISPprtUChUCgUCoVCoVAoFAqFQqFQ/h7+B1nkzk6g0/BwAAAAAElFTkSuQmCC"
+                    alt="Image 2" class="w-2/3 md:w-2/6 object-cover border-2 border-white -ml-4 mt-16">
+
             </div>
+
+
+
+
         </div>
 
         <!-- HTML with Tailwind CSS -->
         <hr class="border-t border-gray-300 my-4">
 
         <!-- Third Row -->
-        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-20 mt-8 text-center md:text-left">
-            <!-- First Column: Copyright -->
-            <div class="md:col-span-1">
-                <p>@2024 – UMCH – Universitätsmedizin Neumarkt am Mieresch Campus Hamburg</p>
+        <!-- <div class="container mx-auto grid md:grid-cols-4 gap-8 px-4 py-8 md:py-6"> -->
+        <div class="flex justify-between items-center px-4 py-4 md:py-2">
+            <div class="container grid md:grid-cols-1">
+                <div class="flex justify-end mb-4">
+                    <p class="mx-2">DE</p>
+                    <p>ENG</p>
+                </div class="mx-1">
+                <div class="flex justify-between">
+                    <!-- First Text on the Left -->
+                    <div class="text-left">
+                        <p class="">@2024 – UMCH – Universitätsmedizin Neumarkt am Mieresch Campus Hamburg</p>
+                    </div>
+
+                    <!-- Container for Three Texts on the Right -->
+                    <div class="flex space-x-4">
+
+                        <a href="#" class="mx-2 underline">UMCH Shop</a>
+                        <a href="#" class="mx-2 underline">UMCH Medical Foundation Track </a>
+                        <a href="#" class="mx-2 underline">
+                            <i class="fa-regular fa-envelope mr-1"></i>
+                            Contact us
+                        </a>
+                    </div>
+                </div>
             </div>
-            <!-- Second Column: Plain Text -->
-            <div>
-                <a class="underline" href="/umch-shop">UMCH Shop</a>
-            </div>
-            <!-- Third Column: Plain Text -->
-            <div>
-                <a class="underline" href="/foundation">UMCH Medical Foundation Track</a>
-            </div>
-            <!-- Fourth Column: Plain Text -->
-            <div>
-                <a class="underline" href="/contact">Contact Us</a>
-            </div>
+
+
+
         </div>
+
+        <!-- </div> -->
     </footer>
 
-    <script>
-        const slider = document.getElementById('slider');
-        const nextButton = document.getElementById('next');
-        const prevButton = document.getElementById('prev');
-        const dots = document.querySelectorAll('.dot');
-
-        let currentIndex = 0;
-
-        function updatePagination() {
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('bg-gray-800', index === currentIndex);
-            });
-        }
-
-        nextButton.addEventListener('click', () => {
-            if (currentIndex < dots.length - 1) {
-                currentIndex++;
-                slider.scrollBy({ left: 200, behavior: 'smooth' });
-            }
-            updatePagination();
-        });
-
-        prevButton.addEventListener('click', () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                slider.scrollBy({ left: -200, behavior: 'smooth' });
-            }
-            updatePagination();
-        });
-
-        // Initial pagination state
-        updatePagination();
-    </script>
-
-
-    <script>
-        const gallery = document.getElementById('video-gallery');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        let scrollAmount = 0;
-
-        prevBtn.addEventListener('click', () => {
-            gallery.scrollBy({ left: -300, behavior: 'smooth' });
-            scrollAmount -= 300;
-        });
-
-        nextBtn.addEventListener('click', () => {
-            gallery.scrollBy({ left: 300, behavior: 'smooth' });
-            scrollAmount += 300;
-        });
-    </script>
-
-
-
-    <script>
-        const prevButton1 = document.getElementById('prevButton');
-        const nextButton1 = document.getElementById('nextButton');
-        const sliderContainer = document.querySelector('.slider-container');
-        let index = 0;
-
-        function updateSlider() {
-            const width = sliderContainer.clientWidth / document.querySelectorAll('.slider-item').length;
-            sliderContainer.style.transform = `translateX(-${index * width}px)`;
-        }
-
-        prevButton1.addEventListener('click', () => {
-            index = (index > 0) ? index - 1 : document.querySelectorAll('.slider-item').length - 1;
-            updateSlider();
-        });
-
-        nextButton1.addEventListener('click', () => {
-            index = (index < document.querySelectorAll('.slider-item').length - 1) ? index + 1 : 0;
-            updateSlider();
-        });
-
-        // Initialize slider
-        window.addEventListener('resize', updateSlider);
-        updateSlider();
-    </script>
-
-    <script>
-        // JavaScript for sliding functionality
-        function slide(direction) {
-            const slider = document.querySelector('.slider-wrapper');
-            const cardWidth = document.querySelector('.slider-wrapper > div').offsetWidth + 16; // card width + margin
-
-            if (direction === 'left') {
-                slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-            } else {
-                slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
-            }
-        }
-    </script>
-
-
-    <script>
-        // JavaScript for slider3 functionality
-        const slider3 = document.getElementById('slider3');
-        const dots3 = [document.getElementById('dot1'), document.getElementById('dot2'), document.getElementById('dot3')];
-        let currentIndex3 = 0;
-
-        function updateSlider3(index) {
-            slider3.style.transform = `translateX(-${index * 100}%)`;
-            dots3.forEach((dot, i) => {
-                dot.classList.remove('bg-gray-800');
-                if (i === index) {
-                    dot.classList.add('bg-gray-800');
-                }
-            });
-        }
-
-        document.getElementById('prev').addEventListener('click', () => {
-            currentIndex3 = (currentIndex3 === 0) ? dots3.length - 1 : currentIndex3 - 1;
-            updateSlider3(currentIndex3);
-        });
-
-        document.getElementById('next').addEventListener('click', () => {
-            currentIndex3 = (currentIndex3 === dots3.length - 1) ? 0 : currentIndex3 + 1;
-            updateSlider3(currentIndex3);
-        });
-
-        updateSlider3(currentIndex3);
-    </script>
-
+    <!-- scritps -->
+    <script src="javascripts/main.js"></script>
 
 </body>
 
