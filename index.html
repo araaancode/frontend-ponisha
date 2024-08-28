@@ -119,52 +119,69 @@
 <body>
 
     <!-- 1. Navbar and Navbar -->
-    <nav style="background-color: #004f71;color:#fff;font-size: small;" class="bg-white shadow-md nav-1 px-8">
-        <div class="container mx-auto py-4 flex justify-between items-center">
+    <nav style="background-color: #004f71; color:#fff;" class="shadow-md px-4 md:px-8">
+        <div class="container mx-auto py-4 flex flex-wrap justify-between items-center">
+            <!-- Mobile Menu Button -->
+            <div class="flex md:hidden w-full justify-between items-center">
+                <div class="text-white font-bold">Menu</div>
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Left Links (Hidden on small screens) -->
             <div class="hidden md:flex space-x-2 mr-1">
                 <a href="#" class="text-gray-200 font-sm font-bold">News</a>
                 <a href="#" class="text-gray-200 font-sm font-bold">Events</a>
                 <a href="#" class="text-gray-200 font-sm font-bold">Press</a>
                 <a href="#" class="text-gray-200 font-sm font-bold">Karriere</a>
-                <a href="#" class="text-gray-200 font-sm font-bold ">Shop</a>
+                <a href="#" class="text-gray-200 font-sm font-bold">Shop</a>
             </div>
 
-            <div class="h-8 w-px bg-white mx-2"></div>
-            <div class="flex items-center font-sm mx-1">
-                <div class="flex mx-2 items-center font-bold text-gray-200">
+            <!-- Divider (Hidden on small screens) -->
+            <div class="hidden md:block h-8 w-px bg-white"></div>
+
+            <!-- Contact Information -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-start font-sm w-full md:w-auto">
+                <div
+                    class="flex items-center justify-center md:justify-start ml-0 md:ml-2 mr-0 md:mr-10 mt-4 md:mt-0 font-bold text-gray-200">
                     <img class="svg mr-2" src="assets/icon/Icon Telefon.svg" alt="Telefon">
-                    <span>Admissions</span>
-                    <span>+49</span>
-                    <span>(0)</span>
-                    <span>40-2093485-00</span>
+                    <span>Admissions +49 (0) 40-2093485-00</span>
                 </div>
-                <div class="flex mx-2 items-center font-bold text-gray-200">
+                <div
+                    class="flex items-center justify-center md:justify-start mx-0 md:mx-2 mt-4 md:mt-0 font-bold text-gray-200">
                     <img class="svg mr-2" src="assets/icon/Icon Telefon.svg" alt="Telefon">
-                    <span>Students</span>
-                    <span>+49</span>
-                    <span>(0)</span>
-                    <span>40-2093485-01</span>
+                    <span>Students +49 (0) 40-2093485-01</span>
                 </div>
             </div>
 
+            <!-- Divider (Hidden on small screens) -->
+            <div class="hidden md:block h-8 w-px bg-white mx-2"></div>
 
-            <!-- nav 3 -->
-            <div class="flex items-center mr-10">
-                <div class="h-8 w-px bg-white mx-4"></div>
-                <div class="p-1 rounded-full border border-white border-1 mr-2">
+            <!-- Icons Section -->
+            <div class="flex items-center justify-center md:mr-10 mt-4 md:mt-0">
+                <div class="p-1 rounded-full border border-white mr-2">
                     <img class="camera-svg" src="assets/icon/Icon Camera.svg" alt="Camera">
                 </div>
                 <img class="whatsup-icon" src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png"
                     alt="whatsup-icon">
             </div>
-            <div class="flex items-center">
+
+            <!-- Profile Dropdown -->
+            <div class="flex items-center justify-center mt-4 md:mt-0">
                 <img width="30px" height="30px" src="https://cdn-icons-png.flaticon.com/128/555/555613.png" alt="">
                 <i class="fas fa-chevron-down ml-2"></i>
-                <div class="h-8 w-px bg-white mx-4"></div>
             </div>
 
-            <!-- nav 4 -->
-            <div class="flex items-center justify-betweentext-gray-200 px-2">
+            <!-- Divider (Hidden on small screens) -->
+            <div class="hidden md:block h-8 w-px bg-white"></div>
+
+            <!-- Sign-in Section -->
+            <div class="flex items-center justify-center mt-4 md:mt-0 text-gray-200 px-2">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-8">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -174,23 +191,42 @@
                 <i class="mx-2 fas fa-chevron-down"></i>
             </div>
         </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden flex flex-col space-y-2 mt-4">
+            <a href="#" class="text-gray-200 font-sm font-bold">News</a>
+            <a href="#" class="text-gray-200 font-sm font-bold">Events</a>
+            <a href="#" class="text-gray-200 font-sm font-bold">Press</a>
+            <a href="#" class="text-gray-200 font-sm font-bold">Karriere</a>
+            <a href="#" class="text-gray-200 font-sm font-bold">Shop</a>
+        </div>
     </nav>
 
-    <header style="background-color: #1b3a54;color:#fff;" class="bg-white shadow-md nav-2 py-6 px-10">
-        <div class="flex flex-wrap justify-between items-center p-4 ">
+    <script>
+        // JavaScript to toggle mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+  
+    <header class="bg-[#1b3a54] text-white py-6 px-4 md:px-10 shadow-md">
+        <div class="flex flex-wrap justify-between items-center">
             <!-- Left Side Elements -->
-            <div class="flex space-x-4">
-                <div class="text-white p-2 rounded">
-                    <img style="width: 250px;" src="/assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="">
+            <div class="flex space-x-4 items-center">
+                <div class="p-2 rounded">
+                    <img class="w-[150px] md:w-[200px] lg:w-[250px]" src="/assets/logos/umfst-logo-neu_whiteENG-01-1-768x231.png" alt="UMFST Logo">
                 </div>
-                <div class="text-white p-2 rounded">
-                    <img style="width: 250px;" src="/assets/logos/umch_blanco-opt.png" alt="umch_blanco">
+                <div class="p-2 rounded">
+                    <img class="w-[150px] md:w-[200px] lg:w-[250px]" src="/assets/logos/umch_blanco-opt.png" alt="UMCH Blanco">
                 </div>
             </div>
-
+    
             <!-- Right Side Elements -->
-            <div class="flex space-x-4">
-                <div class="relative max-w-sm mx-6">
+            <div class="flex flex-wrap space-x-4 items-center mt-4 md:mt-0">
+                <div class="relative max-w-sm w-full md:w-auto mx-0 md:mx-6">
                     <div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
                         <svg class="h-8 w-8 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -198,18 +234,19 @@
                                 d="M21 21l-4.35-4.35M18 10.5a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"></path>
                         </svg>
                     </div>
-                    <input style="background-color: #1b3a54;color:#fff;font-size: small;"
-                        class="w-full rounded-full pl-10 pr-4 py-3 text-gray-700 focus:outline-none border border-gray-200"
+                    <input class="w-full bg-[#1b3a54] text-white text-sm rounded-full pl-10 pr-4 py-3 focus:outline-none border border-gray-200"
                         type="text">
                 </div>
-
+    
                 <div>
-                    <button style="color: #1b3a54;" class="pointer bg-yellow-300 text-white py-3 px-6 rounded-full">
-                        Jetzt bewerben</button>
+                    <button class="bg-yellow-300 text-[#1b3a54] py-3 px-6 rounded-full hover:bg-yellow-400 transition-colors">
+                        Jetzt bewerben
+                    </button>
                 </div>
             </div>
         </div>
     </header>
+    
 
     <!-- 2. Links -->
     <section class="py-8 px-20">
@@ -611,14 +648,16 @@
                         <span style="color: #ffea43;" class="mr-0 mt-3 flex items-center">
                             <i class="ri-checkbox-line text-3xl"></i>
                         </span>
-                        <span class="text-gray-100 text-sm ml-6">Wahl des Lehrkrankenhauses für Studierende im 2. Studienjahr</span>
+                        <span class="text-gray-100 text-sm ml-6">Wahl des Lehrkrankenhauses für Studierende im 2.
+                            Studienjahr</span>
                     </li>
 
                     <li class="flex items-center mt-4">
                         <span style="color: #ffea43;" class="mr-6 mt-3">
                             <i class="ri-map-pin-line text-3xl"></i>
                         </span>
-                        <span class="text-gray-100 text-sm">Regional verwurzelt bleiben durch Zuteilung in Lehrkrankenhäuser
+                        <span class="text-gray-100 text-sm">Regional verwurzelt bleiben durch Zuteilung in
+                            Lehrkrankenhäuser
                             deiner Heimatregion</span>
                     </li>
 
@@ -626,23 +665,25 @@
                         <span style="color: #ffea43;" class="mr-6 mt-3 rotate-90">
                             <i class="ri-search-line text-3xl"></i>
                         </span>
-                        <span class="text-gray-100 text-sm">Frühzeitiger Einblick in den Klinikalltag ab dem 3. bis 6. Studienjahr</span>
+                        <span class="text-gray-100 text-sm">Frühzeitiger Einblick in den Klinikalltag ab dem 3. bis 6.
+                            Studienjahr</span>
                     </li>
 
                     <li class="flex items-center mt-4">
                         <span style="color: #ffea43;" class="mr-6 mt-3 w-8 h-8">
-                           <img src="assets/icon/Icon Calender.svg" alt="Calender">
+                            <img src="assets/icon/Icon Calender.svg" alt="Calender">
                         </span>
                         <span class="text-gray-100 text-sm">8 Wochen klinische Phase im 3. Studienjah</span>
                     </li>
-                    
+
                     <li class="flex items-center mt-4">
                         <span style="color: #ffea43;" class="mr-6 mt-3">
                             <i class="ri-calendar-line text-3xl"></i>
                         </span>
-                        <span class="text-gray-100 text-sm">12 bis 14 Wochen klinische Phase im 4. bis 6. Studienjahr</span>
+                        <span class="text-gray-100 text-sm">12 bis 14 Wochen klinische Phase im 4. bis 6.
+                            Studienjahr</span>
                     </li>
-                      
+
                     <li class="flex items-center mt-4">
                         <span style="color: #ffea43;" class="mr-6 mt-3 w-16 h-16">
                             <img src="assets/icon/Icon Award.svg" alt="">
@@ -655,7 +696,8 @@
                         <span style="color: #ffea43;" class="mr-6 mt-3 w-10 h-10">
                             <img src="assets/icon/Icon Hospital.svg" alt="">
                         </span>
-                        <span class="text-gray-100 text-sm">Studierende erhalten Einblicke in xyxyxy Fachbereiche der Medizin</span>
+                        <span class="text-gray-100 text-sm">Studierende erhalten Einblicke in xyxyxy Fachbereiche der
+                            Medizin</span>
                     </li>
                 </ul>
             </div>
